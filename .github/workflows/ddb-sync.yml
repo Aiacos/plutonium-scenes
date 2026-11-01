@@ -1,0 +1,81 @@
+name: Build DDB scene data
+
+# Rebuilds the `generated` branch daily: the latest TheGiddyLimit/plutonium-scenes data, enriched
+# with the DDB Importer community lights, walls and creature placements (MrPrimate/ddb-meta-data).
+# Point Plutonium's "Base Scene Repository URL" at
+#   https://raw.githubusercontent.com/Aiacos/plutonium-scenes/generated
+#
+# `generated` is an orphan branch holding only `data/` (all Plutonium reads). Upstream is merged
+# locally and never pushed: a GITHUB_TOKEN cannot push commits that touch upstream's workflow files.
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths: [ "_node/ddb-import/**", ".github/workflows/ddb-sync.yml" ]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ddb-sync
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'Aiacos/plutonium-scenes'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Merge the latest upstream data (local only)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add upstream https://github.com/TheGiddyLimit/plutonium-scenes.git
+          git fetch upstream main
+          # Our commits never touch upstream files, so this merge cannot conflict
+          git merge --no-edit upstream/main
+
+      - name: Fetch DDB meta data and 5etools data
+        run: |
+          git clone --depth 1 https://github.com/MrPrimate/ddb-meta-data.git "$RUNNER_TEMP/ddb-meta-data"
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/5etools-mirror-3/5etools-src.git "$RUNNER_TEMP/5etools-src"
+          git -C "$RUNNER_TEMP/5etools-src" sparse-checkout set --no-cone \
+            '/data/adventure/' '/data/book/' '/data/bestiary/' '/data/adventures.json' '/data/books.json'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - run: npm ci
+
+      - name: Build enriched scene data
+        run: |
+          node _node/ddb-import/build.js \
+            --ddb "$RUNNER_TEMP/ddb-meta-data/content" \
+            --vet "$RUNNER_TEMP/5etools-src/data" \
+            --report "$RUNNER_TEMP/ddb-import-report.json"
+
+      - name: Validate
+        run: npm run test:data
+
+      - name: Publish the generated branch
+        run: |
+          UPSTREAM_SHA=$(git rev-parse --short upstream/main)
+          DDB_SHA=$(git -C "$RUNNER_TEMP/ddb-meta-data" rev-parse --short HEAD)
+          OUT="$RUNNER_TEMP/out"
+          git worktree add --orphan -b generated-new "$OUT"
+          cp -r data "$OUT/data"
+          cp "$RUNNER_TEMP/ddb-import-report.json" "$OUT/ddb-import-report.json"
+          printf '# Generated Plutonium scene data\n\nBuilt by `.github/workflows/ddb-sync.yml` on `main`. Do not edit.\n' > "$OUT/README.md"
+          cd "$OUT"
+          git add -A
+          git commit -q -m "build: DDB community scene data ($(date -u +%F))" \
+            -m "plutonium-scenes ${UPSTREAM_SHA}, ddb-meta-data ${DDB_SHA}"
+          git push --force origin generated-new:generated
