@@ -55,6 +55,9 @@ export const convertLights = ({lights, xf, frameDdb, framePlut}) => {
 			cpy.config = {...cpy.config};
 			cpy.config.dim = round((cpy.config.dim || 0) * k, 2);
 			cpy.config.bright = round((cpy.config.bright || 0) * k, 2);
+			// Lights exported from Foundry v9 carry `angle: 0` for "unrestricted"; modern Foundry
+			// renders a zero-width cone, i.e. nothing
+			if (!cpy.config.angle) cpy.config.angle = 360;
 			return lightOptimizer.getOptimizedEntity(cpy);
 		})
 		.filter(light => {
