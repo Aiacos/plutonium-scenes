@@ -3,7 +3,7 @@
 Open work for the DDB scene data generator (`_node/ddb-import/`, published to the `generated` branch). The Foundry side lives in [Aiacos/ddb-plutonium-scenes › TODO.md](https://github.com/Aiacos/ddb-plutonium-scenes/blob/main/TODO.md). See [CHANGELOG.md](CHANGELOG.md) for what each item changed.
 
 ## 🐞 Known issues
-- [x] Unmatched maps: 354 → 276 with image-bounds matching confirmed by walls. The rest have no DDB scene with the same name and image shape, or no 5etools map; see "Known limitations".
+- [x] Unmatched maps: 354 → 179 with image-bounds matching confirmed by walls or by registration agreeing with it. The rest have no DDB scene with the same name and image shape, or no 5etools map; see "Known limitations".
 - [x] Differently cropped player maps are matched against DDB scenes directly (13 more with data).
 - [x] Walls past the map image are trimmed to it.
 - [x] NPC matching: plurals, and the book's own aliases ("Prince Livid" → Gray Ooze).

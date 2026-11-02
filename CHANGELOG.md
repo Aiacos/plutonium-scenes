@@ -2,6 +2,16 @@
 
 Changes to this fork's DDB generator (`_node/ddb-import/`) and the data it publishes on the `generated` branch. Upstream data changes are in [TheGiddyLimit/plutonium-scenes](https://github.com/TheGiddyLimit/plutonium-scenes).
 
+## 2026-11-02 (4)
+
+### Fixed
+- **Maps whose DDB name differs slightly** ("Wizards of Wine Winery", "Abbey of Saint Markovia (Ground)") or whose walls only partly match are now matched when wall registration, fitted on its own, lands on the image-bounds transform (≤ 1 % scale, ≤ 1 grid cell): `bounds-agree`. Curse of Strahd gains Wizard of Wines Winery, Abbey of Saint Markovia ground floor, Tsolenka Pass, Baba Lysaga's Creeping Hut, Ruins of Berez and the Elevator Trap.
+- **Same-named maps**: when several DDB scenes share a name once the map number is dropped (Keys from the Golden Vault's "Map N.2: DM's Map"), a different map number halves the similarity, so each chapter gets its own scene. Map numbers are ignored otherwise, as books reprinting a map number it differently.
+- Overall: unmatched maps 276 → 179; maps with creatures 842 → 981, with lights 817 → 952. No earlier match lost; 4 now use a better DDB scene (e.g. *Labyrinth of Eyes (Alternate Configuration)*).
+
+### Changed
+- Matching moved from `build.js` to `match.js`, with unit tests.
+
 ## 2026-11-02 (3)
 
 ### Added

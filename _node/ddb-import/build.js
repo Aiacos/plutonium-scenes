@@ -9,23 +9,11 @@ import fs from "fs";
 import path from "path";
 import {Command} from "commander";
 import {readJsonSync, writeJsonSync} from "5etools-utils/lib/UtilFs.js";
-import {registerWalls, scoreTransform} from "./geometry.js";
-import {inferBookSources, loadCreatureAliases, loadDdbScenes, loadVetoolsBestiary, loadVetoolsMaps, nameSimilarity, normName} from "./loaders.js";
+import {inferBookSources, loadCreatureAliases, loadDdbScenes, loadVetoolsBestiary, loadVetoolsMaps, normName} from "./loaders.js";
+import {getCandidates, matchEntry} from "./match.js";
 import {convertLights, convertTokens, convertWalls, getPlayerTransform, getPlutFrame, retargetLights, retargetTokens, retargetWalls} from "./convert.js";
 
 export const FLAG_SCOPE = "ddb-plutonium-scenes";
-
-/** Below this, the walls of the two scenes do not describe the same map closely enough. */
-const MIN_REGISTRATION_SCORE = 0.5;
-/** Without walls to register against, only accept an identical name and image aspect ratio. */
-const MAX_ASPECT_DELTA = 0.02;
-/**
- * When wall registration fails on a same-name, same-aspect map, the image-bounds transform is still
- * accepted if one side's walls land on the other's: either side may have walls the other lacks,
- * so this is a one-sided coverage, on enough walls not to be a coincidence.
- */
-const MIN_BOUNDS_COVERAGE = 0.8;
-const MIN_BOUNDS_WALLS = 10;
 
 const DIR_DATA = "data";
 
@@ -35,78 +23,6 @@ const getParams = () => new Command()
 	.option("--report <file>", "Write a JSON report of every match decision.")
 	.parse(process.argv)
 	.opts();
-
-/**
- * Without walls on the Plutonium side, map the DDB image onto the 5etools image by its bounds.
- * DDB coordinates include Foundry's padding minus the background offset; Plutonium shifts the
- * image by the 5etools grid offset. Calibrated against wall registration on 80 maps: median error
- * 0.1 grid cells, 71/80 within half a cell.
- */
-const getAnalyticTransform = ({frameDdb, framePlut}) => {
-	const s = framePlut.width / frameDdb.width;
-	return {
-		s,
-		tx: -s * (frameDdb.padX - frameDdb.offsetX) - framePlut.gridOffsetX,
-		ty: -s * (frameDdb.padY - frameDdb.offsetY) - framePlut.gridOffsetY,
-	};
-};
-
-const getCandidates = ({entry, ddbScenes, books}) => ddbScenes
-	.filter(scene => books.has(scene.book))
-	.map(scene => ({scene, sim: nameSimilarity(entry.name, scene.name)}))
-	.filter(({sim}) => sim >= 0.3)
-	.sort((a, b) => b.sim - a.sim)
-	.slice(0, 5);
-
-const isSameImage = ({scene, sim}, framePlut) => {
-	if (sim < 1 || !framePlut.width) return false;
-	const arDdb = scene.frame.width / scene.frame.height;
-	const arPlut = framePlut.width / framePlut.height;
-	return Math.abs(arDdb / arPlut - 1) <= MAX_ASPECT_DELTA;
-};
-
-/**
- * Map by image bounds a candidate with the same name and aspect ratio. With walls on both sides,
- * the walls must confirm the transform (see MIN_BOUNDS_COVERAGE).
- */
-const matchByBounds = ({entry, candidates, framePlut}) => {
-	for (const candidate of candidates) {
-		if (!isSameImage(candidate, framePlut)) continue;
-		const {scene} = candidate;
-		const xf = getAnalyticTransform({frameDdb: scene.frame, framePlut});
-		if (!entry.walls?.length || scene.walls.length < 3) return {status: "matched", method: "bounds", scene, xf, score: null, framePlut};
-
-		const fit = scoreTransform({wallsDdb: scene.walls, wallsPlut: entry.walls, xf, gridPlut: framePlut.gridSize});
-		const isDdbCovered = fit && fit.coverageDdb >= MIN_BOUNDS_COVERAGE && scene.walls.length >= MIN_BOUNDS_WALLS;
-		const isPlutCovered = fit && fit.coveragePlut >= MIN_BOUNDS_COVERAGE && entry.walls.length >= MIN_BOUNDS_WALLS;
-		if (isDdbCovered || isPlutCovered) {
-			return {status: "matched", method: "bounds-walls", scene, xf, score: Math.max(fit.coverageDdb, fit.coveragePlut), framePlut};
-		}
-	}
-	return null;
-};
-
-const matchEntry = ({entry, vetMap, candidates}) => {
-	const framePlut = getPlutFrame(vetMap);
-
-	let best = null;
-	if (entry.walls?.length) {
-		for (const {scene, sim} of candidates) {
-			if (!scene.walls.length) continue;
-			const scaleHints = framePlut.width ? [framePlut.width / scene.frame.width, framePlut.height / scene.frame.height] : [];
-			const reg = registerWalls({wallsDdb: scene.walls, wallsPlut: entry.walls, scaleHints, gridPlut: framePlut.gridSize});
-			if (!reg) continue;
-			// Prefer the scene carrying the most data when two variants (DM/player) register equally well
-			const rank = reg.score + 0.001 * Math.min(scene.lights.length + scene.tokens.length, 50) + 0.01 * sim;
-			if (!best || rank > best.rank) best = {scene, sim, reg, rank};
-		}
-		if (best && best.reg.score >= MIN_REGISTRATION_SCORE) {
-			return {status: "matched", method: "walls", scene: best.scene, xf: best.reg, score: best.reg.score, framePlut};
-		}
-	}
-
-	return matchByBounds({entry, candidates, framePlut}) ?? {status: "unmatched", best, framePlut};
-};
 
 /**
  * Book > chapter folder for the companion module, mirroring DDB Importer's adventure layout. `sort`
