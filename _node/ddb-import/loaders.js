@@ -28,14 +28,31 @@ export const nameSimilarity = (a, b) => {
 /* 5etools                                       */
 /* -------------------------------------------- */
 
+/** "Map 10.2: {@creature Baba Lysaga|CoS}'s Creeping Hut" -> "Map 10.2: Baba Lysaga's Creeping Hut", as Plutonium titles the scene. */
+export const stripTags = str => (str || "")
+	// "{@tag text|source|display}": 5etools shows the display text when there is one
+	.replace(/\{@\w+\s+([^}]*)\}/g, (_m, args) => { const [text, , display] = args.split("|"); return display || text; })
+	.trim();
+
 const walkMapImages = (obj, out, meta) => {
 	if (Array.isArray(obj)) return obj.forEach(it => walkMapImages(it, out, meta));
 	if (!obj || typeof obj !== "object") return;
 	if (obj.type === "image" && obj.imageType === "map" && obj.title) {
-		out.push({...meta, name: obj.title, width: obj.width, height: obj.height, grid: obj.grid || {}, order: out.length});
+		out.maps.push({...meta, id: obj.id, name: stripTags(obj.title), width: obj.width, height: obj.height, grid: obj.grid || {}, order: out.maps.length});
+	}
+	if (obj.type === "image" && obj.imageType === "mapPlayer" && obj.mapParent?.id) {
+		out.players.push({parentId: obj.mapParent.id, title: stripTags(obj.title), width: obj.width, height: obj.height, grid: obj.grid || {}});
 	}
 	Object.values(obj).forEach(it => walkMapImages(it, out, meta));
 };
+
+/**
+ * Plutonium imports a player map as its own scene, titled "<DM map> (Player Version)" when the image
+ * is just captioned "Player Version", else by its own title ("Walls of Ravenloft (Battlemap; Player Version)").
+ */
+const getPlayerName = (player, parent) => !player.title || /^player version$/i.test(player.title)
+	? `${parent.name} (Player Version)`
+	: player.title;
 
 const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
 
@@ -48,8 +65,8 @@ const getChapterName = contentsEntry => {
 
 /**
  * DM map images of every 5etools adventure and book, i.e. the scenes Plutonium can import, with the
- * book chapter each one appears in. A book's top-level `data` sections line up with the `contents` of
- * its index entry, so the section index is the chapter index.
+ * book chapter each one appears in and their player versions (`players`). A book's top-level `data`
+ * sections line up with the `contents` of its index entry, so the section index is the chapter index.
  */
 export const loadVetoolsMaps = vetDir => {
 	const out = [];
@@ -58,16 +75,22 @@ export const loadVetoolsMaps = vetDir => {
 			const file = path.join(vetDir, dir, `${dir}-${meta.id.toLowerCase()}.json`);
 			if (!fs.existsSync(file)) continue;
 			const sections = readJson(file)[`${prop}Data`]?.[0]?.data ?? [];
-			const mapsBook = [];
+			const found = {maps: [], players: []};
 			sections.forEach((section, chapterIx) => {
-				walkMapImages(section, mapsBook, {
+				walkMapImages(section, found, {
 					source: meta.source ?? meta.id,
 					bookName: meta.name,
 					chapterIx,
 					chapterName: getChapterName(meta.contents?.[chapterIx]) ?? section.name,
 				});
 			});
-			out.push(...mapsBook);
+			const byId = new Map(found.maps.filter(m => m.id).map(m => [m.id, m]));
+			for (const player of found.players) {
+				const parent = byId.get(player.parentId);
+				if (!parent) continue;
+				(parent.players ||= []).push({name: getPlayerName(player, parent), width: player.width, height: player.height, grid: player.grid});
+			}
+			out.push(...found.maps);
 		}
 	}
 	return out;

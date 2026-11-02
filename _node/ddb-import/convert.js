@@ -89,6 +89,51 @@ export const convertWalls = ({walls, xf}) => {
 };
 
 /* -------------------------------------------- */
+/* Player versions                               */
+/* -------------------------------------------- */
+
+const MAX_PLAYER_ASPECT_DELTA = 0.02;
+
+/**
+ * Map a DM scene onto its player version. Both images show the same map, but a player image may be
+ * exported at another resolution (5etools `autoScale`); a different aspect ratio means a different
+ * crop, which cannot be mapped without walls to register against.
+ * @return {?{s: number, tx: number, ty: number}}
+ */
+export const getPlayerTransform = ({frameDm, framePlayer}) => {
+	if (!frameDm.width || !framePlayer.width) return null;
+	const arDm = frameDm.width / frameDm.height;
+	const arPlayer = framePlayer.width / framePlayer.height;
+	if (Math.abs(arPlayer / arDm - 1) > MAX_PLAYER_ASPECT_DELTA) return null;
+	// Plutonium shifts each image by its own grid offset
+	const s = framePlayer.width / frameDm.width;
+	return {s, tx: s * frameDm.gridOffsetX - framePlayer.gridOffsetX, ty: s * frameDm.gridOffsetY - framePlayer.gridOffsetY};
+};
+
+/** Re-target already converted entity data (scene coordinates) from a DM scene to its player version. */
+export const retargetWalls = ({walls, xf}) => walls.map(wall => {
+	const [x0, y0] = applyPoint(xf, wall.c[0], wall.c[1]);
+	const [x1, y1] = applyPoint(xf, wall.c[2], wall.c[3]);
+	return {...wall, c: [x0, y0, x1, y1]};
+});
+
+export const retargetLights = ({lights, xf, frameDm, framePlayer}) => {
+	const k = getRadiusFactor({xf, frameDdb: frameDm, framePlut: framePlayer});
+	return lights.map(light => {
+		const cpy = structuredClone(light);
+		[cpy.x, cpy.y] = applyPoint(xf, light.x, light.y);
+		if (cpy.config?.dim != null) cpy.config.dim = round(cpy.config.dim * k, 2);
+		if (cpy.config?.bright != null) cpy.config.bright = round(cpy.config.bright * k, 2);
+		return cpy;
+	});
+};
+
+export const retargetTokens = ({tokens, xf, frameDm, framePlayer}) => tokens.map(token => {
+	const [cx, cy] = applyPoint(xf, token.x + token.width * frameDm.gridSize / 2, token.y + token.height * frameDm.gridSize / 2);
+	return {...token, x: round(cx - token.width * framePlayer.gridSize / 2), y: round(cy - token.height * framePlayer.gridSize / 2)};
+});
+
+/* -------------------------------------------- */
 /* Creatures                                     */
 /* -------------------------------------------- */
 

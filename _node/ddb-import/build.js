@@ -11,7 +11,7 @@ import {Command} from "commander";
 import {readJsonSync, writeJsonSync} from "5etools-utils/lib/UtilFs.js";
 import {registerWalls} from "./geometry.js";
 import {inferBookSources, loadDdbScenes, loadVetoolsBestiary, loadVetoolsMaps, nameSimilarity, normName} from "./loaders.js";
-import {convertLights, convertTokens, convertWalls, getPlutFrame} from "./convert.js";
+import {convertLights, convertTokens, convertWalls, getPlayerTransform, getPlutFrame, retargetLights, retargetTokens, retargetWalls} from "./convert.js";
 
 export const FLAG_SCOPE = "ddb-plutonium-scenes";
 
@@ -84,16 +84,55 @@ const matchEntry = ({entry, vetMap, candidates}) => {
  * Book > chapter folder for the companion module, mirroring DDB Importer's adventure layout. `sort`
  * keeps chapters and maps in reading order, which alphabetical folder sorting would scramble.
  */
-const setFolder = (entry, vetMap) => {
+const setFolder = (entry, vetMap, {isPlayer = false} = {}) => {
 	if (!vetMap.bookName || !vetMap.chapterName) return false;
 	entry.flags = {
 		...entry.flags,
 		[FLAG_SCOPE]: {
 			...entry.flags?.[FLAG_SCOPE],
-			folder: {path: [vetMap.bookName, vetMap.chapterName], sort: [vetMap.chapterIx, vetMap.order]},
+			// A player version sorts right after its DM map
+			folder: {path: [vetMap.bookName, vetMap.chapterName], sort: [vetMap.chapterIx, vetMap.order + (isPlayer ? 0.5 : 0)]},
 		},
 	};
 	return true;
+};
+
+/**
+ * Plutonium imports a map's player version as its own scene and gives it side data by its own name
+ * only, so a player scene would get no lights, walls or creatures. Copy the DM map's data onto it,
+ * keeping anything the repository already has for the player version.
+ * @return {string[]} what was added
+ */
+const addPlayerVersion = ({entriesByName, source, vetMap, player, stats}) => {
+	if (!entriesByName.has(player.name)) entriesByName.set(player.name, {name: player.name, source});
+	const entry = entriesByName.get(player.name);
+	if (entry.isIgnored) return [];
+	const added = [];
+
+	if (!entry.flags?.[FLAG_SCOPE]?.folder && setFolder(entry, vetMap, {isPlayer: true})) { stats.scenesFoldered++; added.push("folder"); }
+
+	const dm = entriesByName.get(vetMap.name);
+	if (!dm) return added;
+	const frameDm = getPlutFrame(vetMap);
+	const framePlayer = getPlutFrame(player);
+	const xf = getPlayerTransform({frameDm, framePlayer});
+	if (!xf) return added;
+
+	if (!entry.walls?.length && dm.walls?.length) {
+		entry.walls = retargetWalls({walls: dm.walls, xf});
+		stats.walls += entry.walls.length; stats.scenesWalled++; added.push("walls");
+	}
+	if (!entry.lights?.length && dm.lights?.length) {
+		entry.lights = retargetLights({lights: dm.lights, xf, frameDm, framePlayer});
+		stats.lights += entry.lights.length; stats.scenesLit++; added.push("lights");
+	}
+	const dmFlags = dm.flags?.[FLAG_SCOPE];
+	if (!entry.flags?.[FLAG_SCOPE]?.tokens?.length && dmFlags?.tokens?.length) {
+		const tokens = retargetTokens({tokens: dmFlags.tokens, xf, frameDm, framePlayer});
+		entry.flags = {...entry.flags, [FLAG_SCOPE]: {...entry.flags?.[FLAG_SCOPE], tokens, ddbScene: dmFlags.ddbScene}};
+		stats.tokens += tokens.length; stats.scenesPopulated++; added.push("tokens");
+	}
+	return added;
 };
 
 const run = () => {
@@ -119,10 +158,12 @@ const run = () => {
 		const fpath = path.join(DIR_DATA, fname);
 		const json = fs.existsSync(fpath) ? readJsonSync(fpath) : {map: []};
 
-		const entriesByName = new Map(json.map.map(e => [normName(e.name), e]));
+		// Keyed by exact name, as Plutonium matches: normalised names collide ("Map 2: Walls of
+		// Ravenloft" vs "Walls of Ravenloft (Battlemap; DM Version)")
+		const entriesByName = new Map(json.map.map(e => [e.name, e]));
 		// Every DM map Plutonium can import, plus entries the repo already has
 		for (const vetMap of vetMapsForSource) {
-			if (!entriesByName.has(normName(vetMap.name))) entriesByName.set(normName(vetMap.name), {name: vetMap.name, source});
+			if (!entriesByName.has(vetMap.name)) entriesByName.set(vetMap.name, {name: vetMap.name, source});
 		}
 
 		let isChanged = false;
@@ -168,6 +209,13 @@ const run = () => {
 
 			report.push({source, name: entry.name, status: "matched", method: match.method, score: match.score && Number(match.score.toFixed(3)), scale: Number(xf.s.toFixed(4)), ddbScene: scene.file, added});
 			if (added.length) isChanged = true;
+		}
+
+		for (const vetMap of vetMapsForSource) {
+			for (const player of vetMap.players ?? []) {
+				const added = addPlayerVersion({entriesByName, source, vetMap, player, stats});
+				if (added.length) { isChanged = true; report.push({source, name: player.name, status: "player", dm: vetMap.name, added}); }
+			}
 		}
 
 		if (!isChanged) continue;
