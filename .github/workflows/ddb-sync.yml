@@ -12,6 +12,15 @@ on:
   schedule:
     - cron: "17 4 * * *"
   workflow_dispatch:
+    inputs:
+      ddb_ref:
+        description: "ddb-meta-data commit/branch to build from (empty: latest main)"
+        required: false
+        default: ""
+      vet_ref:
+        description: "5etools-src commit/branch to build from (empty: latest main)"
+        required: false
+        default: ""
   push:
     branches: [ main ]
     paths: [ "_node/ddb-import/**", ".github/workflows/ddb-sync.yml" ]
@@ -42,18 +51,35 @@ jobs:
           # Our commits never touch upstream files, so this merge cannot conflict
           git merge --no-edit upstream/main
 
+      # Each build records the input commits in the `generated` commit message; to roll back a bad
+      # upstream push, re-run this workflow with those commits as `ddb_ref` / `vet_ref`.
       - name: Fetch DDB meta data and 5etools data
+        env:
+          DDB_REF: ${{ inputs.ddb_ref }}
+          VET_REF: ${{ inputs.vet_ref }}
         run: |
-          git clone --depth 1 https://github.com/MrPrimate/ddb-meta-data.git "$RUNNER_TEMP/ddb-meta-data"
-          git clone --depth 1 --filter=blob:none --sparse https://github.com/5etools-mirror-3/5etools-src.git "$RUNNER_TEMP/5etools-src"
+          fetch () { # <repo url> <dir> <ref or empty> [fetch options]
+            git init -q "$2" && git -C "$2" remote add origin "$1"
+            git -C "$2" fetch -q --depth 1 $4 origin "${3:-HEAD}"
+          }
+          fetch https://github.com/MrPrimate/ddb-meta-data.git "$RUNNER_TEMP/ddb-meta-data" "$DDB_REF"
+          git -C "$RUNNER_TEMP/ddb-meta-data" checkout -q FETCH_HEAD
+          fetch https://github.com/5etools-mirror-3/5etools-src.git "$RUNNER_TEMP/5etools-src" "$VET_REF" --filter=blob:none
           git -C "$RUNNER_TEMP/5etools-src" sparse-checkout set --no-cone \
             '/data/adventure/' '/data/book/' '/data/bestiary/' '/data/adventures.json' '/data/books.json'
+          git -C "$RUNNER_TEMP/5etools-src" checkout -q FETCH_HEAD
 
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
 
       - run: npm ci
+
+      # Our generator only: upstream's own files have lint errors we do not touch
+      - name: Lint and unit-test the generator
+        run: |
+          npx eslint _node/ddb-import
+          node --test _node/ddb-import/test/
 
       - name: Build enriched scene data
         run: |
@@ -68,7 +94,8 @@ jobs:
       - name: Publish the generated branch
         run: |
           UPSTREAM_SHA=$(git rev-parse --short upstream/main)
-          DDB_SHA=$(git -C "$RUNNER_TEMP/ddb-meta-data" rev-parse --short HEAD)
+          DDB_SHA=$(git -C "$RUNNER_TEMP/ddb-meta-data" rev-parse HEAD)
+          VET_SHA=$(git -C "$RUNNER_TEMP/5etools-src" rev-parse HEAD)
           OUT="$RUNNER_TEMP/out"
           git worktree add --orphan -b generated-new "$OUT"
           cp -r data "$OUT/data"
@@ -77,5 +104,5 @@ jobs:
           cd "$OUT"
           git add -A
           git commit -q -m "build: DDB community scene data ($(date -u +%F))" \
-            -m "plutonium-scenes ${UPSTREAM_SHA}, ddb-meta-data ${DDB_SHA}"
+            -m "plutonium-scenes ${UPSTREAM_SHA}" -m "ddb_ref=${DDB_SHA}" -m "vet_ref=${VET_SHA}"
           git push --force origin generated-new:generated

@@ -69,15 +69,56 @@ export const convertLights = ({lights, xf, frameDdb, framePlut}) => {
 		});
 };
 
-export const convertWalls = ({walls, xf}) => {
+/**
+ * The map image in Plutonium scene coordinates (Plutonium shifts the image by its grid offset),
+ * with half a grid cell of margin for walls drawn along the edge. Null without image dimensions.
+ */
+export const getImageRect = frame => {
+	if (!frame.width || !frame.height) return null;
+	const m = frame.gridSize / 2;
+	return [-frame.gridOffsetX - m, -frame.gridOffsetY - m, frame.width - frame.gridOffsetX + m, frame.height - frame.gridOffsetY + m];
+};
+
+/**
+ * Clip a wall segment to a rectangle (Liang-Barsky): DDB walls drawn past the image edge, or onto
+ * a part of the map the 5etools image crops out, end at the image edge instead.
+ * @return {?number[]} the clipped [x0, y0, x1, y1], or null if the wall lies outside
+ */
+export const clipSegment = ([x0, y0, x1, y1], [minX, minY, maxX, maxY]) => {
+	const dx = x1 - x0;
+	const dy = y1 - y0;
+	let t0 = 0;
+	let t1 = 1;
+	for (const [p, q] of [[-dx, x0 - minX], [dx, maxX - x0], [-dy, y0 - minY], [dy, maxY - y0]]) {
+		if (p === 0) {
+			if (q < 0) return null;
+			continue;
+		}
+		const t = q / p;
+		if (p < 0) t0 = Math.max(t0, t);
+		else t1 = Math.min(t1, t);
+		if (t0 > t1) return null;
+	}
+	return [round(x0 + t0 * dx), round(y0 + t0 * dy), round(x0 + t1 * dx), round(y0 + t1 * dy)];
+};
+
+const clipWall = (wall, rect) => {
+	if (!rect) return wall;
+	const c = clipSegment(wall.c, rect);
+	return c ? {...wall, c} : null;
+};
+
+export const convertWalls = ({walls, xf, framePlut}) => {
 	const seen = new Set();
+	const rect = framePlut ? getImageRect(framePlut) : null;
 	return walls
 		.map(wall => {
 			const cpy = stripLevelData(wall);
 			const [x0, y0] = applyPoint(xf, wall.c[0], wall.c[1]);
 			const [x1, y1] = applyPoint(xf, wall.c[2], wall.c[3]);
 			cpy.c = [x0, y0, x1, y1];
-			return wallOptimizer.getOptimizedEntity(cpy);
+			const clipped = clipWall(cpy, rect);
+			return clipped && wallOptimizer.getOptimizedEntity(clipped);
 		})
 		.filter(wall => {
 			if (!wall || (wall.c[0] === wall.c[2] && wall.c[1] === wall.c[3])) return false;
@@ -111,11 +152,16 @@ export const getPlayerTransform = ({frameDm, framePlayer}) => {
 };
 
 /** Re-target already converted entity data (scene coordinates) from a DM scene to its player version. */
-export const retargetWalls = ({walls, xf}) => walls.map(wall => {
-	const [x0, y0] = applyPoint(xf, wall.c[0], wall.c[1]);
-	const [x1, y1] = applyPoint(xf, wall.c[2], wall.c[3]);
-	return {...wall, c: [x0, y0, x1, y1]};
-});
+export const retargetWalls = ({walls, xf, framePlayer}) => {
+	const rect = framePlayer ? getImageRect(framePlayer) : null;
+	return walls
+		.map(wall => {
+			const [x0, y0] = applyPoint(xf, wall.c[0], wall.c[1]);
+			const [x1, y1] = applyPoint(xf, wall.c[2], wall.c[3]);
+			return clipWall({...wall, c: [x0, y0, x1, y1]}, rect);
+		})
+		.filter(wall => wall && (wall.c[0] !== wall.c[2] || wall.c[1] !== wall.c[3]));
+};
 
 export const retargetLights = ({lights, xf, frameDm, framePlayer}) => {
 	const k = getRadiusFactor({xf, frameDdb: frameDm, framePlut: framePlayer});
@@ -230,7 +276,10 @@ export const findBookCreature = ({name, source, bestiary}) => {
 	if (!own.length) return null;
 	const k = normName(name);
 	if (!k) return null;
-	const exact = own.find(c => normName(c.name) === k || c.alias?.some(a => normName(a) === k));
+	// "Tribal Warrior Spore Servants" names the group of "Tribal Warrior Spore Servant"
+	const singular = str => normName(str).replace(/s$/, "");
+	const exact = own.find(c => normName(c.name) === k || c.alias?.some(a => normName(a) === k)) ??
+		own.find(c => singular(c.name) === singular(name));
 	if (exact) return exact;
 	if (bestiary.has(k)) return null;
 
@@ -251,11 +300,39 @@ export const findBookCreature = ({name, source, bestiary}) => {
 	return unique(others.filter(c => nameSimilarity(c.name, name) >= 0.85));
 };
 
-/** @return {?{"2024": {name, source}, "2014": {name, source}}} */
-export const resolveCreatures = ({token, source, bestiary}) => {
+/**
+ * The creature a book's own text names this way ("Prince Livid" -> Gray Ooze, see
+ * `loadCreatureAliases`), as a bestiary entry. Names that are creatures themselves are skipped.
+ */
+const findAliasedCreature = ({name, source, bestiary, aliases}) => {
+	// Only personal names: books also alias generic ones ("commoner" for a Vistana Commoner)
+	if (bestiary.has(normName(name))) return null;
+	const ref = aliases?.get((source ?? "").toLowerCase())?.get(normName(name));
+	if (!ref) return null;
+	return getByUid(bestiary, `${ref.name}|${ref.source}`);
+};
+
+/**
+ * @param {{token: object, source: string, bestiary: Map, aliases?: Map}} opts `aliases` from
+ * `loadCreatureAliases`
+ * @return {?{"2024": {name, source}, "2014": {name, source}, npc?: true}} `npc`: the book's own
+ * statblock for a named NPC, which the module must not swap for a generic one
+ */
+export const resolveCreatures = ({token, source, bestiary, aliases}) => {
 	const ddbName = token.flags?.ddbActorFlags?.name;
 	const tokenName = stripTokenSuffix(token.name);
 	const asNpc = npc => ({"2024": toRef(npc), "2014": toRef(npc), npc: true});
+	const asCreature = creature => {
+		if (creature.source.toLowerCase() === (source ?? "").toLowerCase()) return asNpc(creature);
+		const candidates = bestiary.get(normName(creature.name));
+		return {"2024": toRef(pickCreature(candidates, "2024", bestiary)), "2014": toRef(pickCreature(candidates, "2014", bestiary))};
+	};
+
+	// What the book itself calls this creature beats any guess
+	for (const name of new Set([token.name, tokenName, ddbName].filter(Boolean))) {
+		const aliased = findAliasedCreature({name, source, bestiary, aliases});
+		if (aliased) return asCreature(aliased);
+	}
 
 	// A personal name on a generic statblock: the book's own NPC beats the generic one
 	if (ddbName && normName(tokenName) !== normName(ddbName)) {
@@ -284,14 +361,14 @@ export const resolveCreatures = ({token, source, bestiary}) => {
  * Tokens are stored as data, not TokenDocuments: placing them needs actors, which only the
  * companion Foundry module can import (from official compendiums or via Plutonium).
  */
-export const convertTokens = ({tokens, xf, frameDdb, framePlut, source, bestiary}) => tokens
+export const convertTokens = ({tokens, xf, frameDdb, framePlut, source, bestiary, aliases}) => tokens
 	.filter(t => Number.isFinite(t.x) && Number.isFinite(t.y))
 	.map(t => {
 		const width = t.width || 1;
 		const height = t.height || 1;
 		// Transform the centre: DDB and Plutonium grid cells differ in size, the creature size does not
 		const [cx, cy] = applyPoint(xf, t.x + width * frameDdb.gridSize / 2, t.y + height * frameDdb.gridSize / 2);
-		const {npc, ...creatures} = resolveCreatures({token: t, source, bestiary}) ?? {};
+		const {npc, ...creatures} = resolveCreatures({token: t, source, bestiary, aliases}) ?? {};
 		return {
 			name: t.name,
 			ddbName: t.flags?.ddbActorFlags?.name ?? t.name,

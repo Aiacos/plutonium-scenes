@@ -9,8 +9,8 @@ import fs from "fs";
 import path from "path";
 import {Command} from "commander";
 import {readJsonSync, writeJsonSync} from "5etools-utils/lib/UtilFs.js";
-import {registerWalls} from "./geometry.js";
-import {inferBookSources, loadDdbScenes, loadVetoolsBestiary, loadVetoolsMaps, nameSimilarity, normName} from "./loaders.js";
+import {registerWalls, scoreTransform} from "./geometry.js";
+import {inferBookSources, loadCreatureAliases, loadDdbScenes, loadVetoolsBestiary, loadVetoolsMaps, nameSimilarity, normName} from "./loaders.js";
 import {convertLights, convertTokens, convertWalls, getPlayerTransform, getPlutFrame, retargetLights, retargetTokens, retargetWalls} from "./convert.js";
 
 export const FLAG_SCOPE = "ddb-plutonium-scenes";
@@ -19,6 +19,13 @@ export const FLAG_SCOPE = "ddb-plutonium-scenes";
 const MIN_REGISTRATION_SCORE = 0.5;
 /** Without walls to register against, only accept an identical name and image aspect ratio. */
 const MAX_ASPECT_DELTA = 0.02;
+/**
+ * When wall registration fails on a same-name, same-aspect map, the image-bounds transform is still
+ * accepted if one side's walls land on the other's: either side may have walls the other lacks,
+ * so this is a one-sided coverage, on enough walls not to be a coincidence.
+ */
+const MIN_BOUNDS_COVERAGE = 0.8;
+const MIN_BOUNDS_WALLS = 10;
 
 const DIR_DATA = "data";
 
@@ -51,11 +58,39 @@ const getCandidates = ({entry, ddbScenes, books}) => ddbScenes
 	.sort((a, b) => b.sim - a.sim)
 	.slice(0, 5);
 
+const isSameImage = ({scene, sim}, framePlut) => {
+	if (sim < 1 || !framePlut.width) return false;
+	const arDdb = scene.frame.width / scene.frame.height;
+	const arPlut = framePlut.width / framePlut.height;
+	return Math.abs(arDdb / arPlut - 1) <= MAX_ASPECT_DELTA;
+};
+
+/**
+ * Map by image bounds a candidate with the same name and aspect ratio. With walls on both sides,
+ * the walls must confirm the transform (see MIN_BOUNDS_COVERAGE).
+ */
+const matchByBounds = ({entry, candidates, framePlut}) => {
+	for (const candidate of candidates) {
+		if (!isSameImage(candidate, framePlut)) continue;
+		const {scene} = candidate;
+		const xf = getAnalyticTransform({frameDdb: scene.frame, framePlut});
+		if (!entry.walls?.length || scene.walls.length < 3) return {status: "matched", method: "bounds", scene, xf, score: null, framePlut};
+
+		const fit = scoreTransform({wallsDdb: scene.walls, wallsPlut: entry.walls, xf, gridPlut: framePlut.gridSize});
+		const isDdbCovered = fit && fit.coverageDdb >= MIN_BOUNDS_COVERAGE && scene.walls.length >= MIN_BOUNDS_WALLS;
+		const isPlutCovered = fit && fit.coveragePlut >= MIN_BOUNDS_COVERAGE && entry.walls.length >= MIN_BOUNDS_WALLS;
+		if (isDdbCovered || isPlutCovered) {
+			return {status: "matched", method: "bounds-walls", scene, xf, score: Math.max(fit.coverageDdb, fit.coveragePlut), framePlut};
+		}
+	}
+	return null;
+};
+
 const matchEntry = ({entry, vetMap, candidates}) => {
 	const framePlut = getPlutFrame(vetMap);
 
+	let best = null;
 	if (entry.walls?.length) {
-		let best = null;
 		for (const {scene, sim} of candidates) {
 			if (!scene.walls.length) continue;
 			const scaleHints = framePlut.width ? [framePlut.width / scene.frame.width, framePlut.height / scene.frame.height] : [];
@@ -65,19 +100,12 @@ const matchEntry = ({entry, vetMap, candidates}) => {
 			const rank = reg.score + 0.001 * Math.min(scene.lights.length + scene.tokens.length, 50) + 0.01 * sim;
 			if (!best || rank > best.rank) best = {scene, sim, reg, rank};
 		}
-		if (!best || best.reg.score < MIN_REGISTRATION_SCORE) return {status: "unmatched", best, framePlut};
-		return {status: "matched", method: "walls", scene: best.scene, xf: best.reg, score: best.reg.score, framePlut};
+		if (best && best.reg.score >= MIN_REGISTRATION_SCORE) {
+			return {status: "matched", method: "walls", scene: best.scene, xf: best.reg, score: best.reg.score, framePlut};
+		}
 	}
 
-	if (!framePlut.width) return {status: "unmatched", framePlut};
-	const exact = candidates.find(({scene, sim}) => {
-		if (sim < 1) return false;
-		const arDdb = scene.frame.width / scene.frame.height;
-		const arPlut = framePlut.width / framePlut.height;
-		return Math.abs(arDdb / arPlut - 1) <= MAX_ASPECT_DELTA;
-	});
-	if (!exact) return {status: "unmatched", framePlut};
-	return {status: "matched", method: "bounds", scene: exact.scene, xf: getAnalyticTransform({frameDdb: exact.scene.frame, framePlut}), score: null, framePlut};
+	return matchByBounds({entry, candidates, framePlut}) ?? {status: "unmatched", best, framePlut};
 };
 
 /**
@@ -98,12 +126,70 @@ const setFolder = (entry, vetMap, {isPlayer = false} = {}) => {
 };
 
 /**
+ * Copy a matched DDB scene's lights and walls (where the entry has none) and its creatures onto
+ * a scene repository entry.
+ * @return {string[]} what was added
+ */
+const applyMatch = ({entry, match, source, ctx, stats}) => {
+	const {scene, xf, framePlut} = match;
+	const added = [];
+
+	if (!entry.lights?.length && scene.lights.length) {
+		const lights = convertLights({lights: scene.lights, xf, frameDdb: scene.frame, framePlut});
+		if (lights.length) { entry.lights = lights; stats.lights += lights.length; stats.scenesLit++; added.push("lights"); }
+	}
+
+	if (!entry.walls?.length && scene.walls.length) {
+		const walls = convertWalls({walls: scene.walls, xf, framePlut});
+		if (walls.length) { entry.walls = walls; stats.walls += walls.length; stats.scenesWalled++; added.push("walls"); }
+	}
+
+	if (scene.tokens.length) {
+		const tokens = convertTokens({tokens: scene.tokens, xf, frameDdb: scene.frame, framePlut, source, bestiary: ctx.bestiary, aliases: ctx.aliases});
+		if (tokens.length) {
+			entry.flags = {
+				...entry.flags,
+				[FLAG_SCOPE]: {...entry.flags?.[FLAG_SCOPE], tokens, ddbScene: scene.file},
+			};
+			stats.tokens += tokens.length; stats.scenesPopulated++; added.push("tokens");
+		}
+	}
+	return added;
+};
+
+const getMatchReport = ({source, entry, match, added}) => ({
+	source,
+	name: entry.name,
+	status: "matched",
+	method: match.method,
+	score: match.score && Number(match.score.toFixed(3)),
+	scale: Number(match.xf.s.toFixed(4)),
+	ddbScene: match.scene.file,
+	added,
+});
+
+/**
+ * A player image cropped differently from its DM map cannot take the DM data: match it against
+ * the DDB scenes directly, as a map of its own (DDB often has a player scene of its own too).
+ * @return {{added: string[], match: object}}
+ */
+const matchPlayerDirectly = ({entry, source, player, ctx, stats}) => {
+	// Already matched as an entry of its own in the main pass
+	if (!ctx.books?.size || entry.lights?.length || entry.flags?.[FLAG_SCOPE]?.tokens?.length) return {added: [], match: null};
+	const candidates = getCandidates({entry, ddbScenes: ctx.ddbScenes, books: ctx.books});
+	if (!candidates.length) return {added: [], match: null};
+	const match = matchEntry({entry, vetMap: player, candidates});
+	if (match.status !== "matched") return {added: [], match};
+	return {added: applyMatch({entry, match, source, ctx, stats}), match};
+};
+
+/**
  * Plutonium imports a map's player version as its own scene and gives it side data by its own name
  * only, so a player scene would get no lights, walls or creatures. Copy the DM map's data onto it,
  * keeping anything the repository already has for the player version.
  * @return {string[]} what was added
  */
-const addPlayerVersion = ({entriesByName, source, vetMap, player, stats}) => {
+const addPlayerVersion = ({entriesByName, source, vetMap, player, ctx, stats}) => {
 	if (!entriesByName.has(player.name)) entriesByName.set(player.name, {name: player.name, source});
 	const entry = entriesByName.get(player.name);
 	if (entry.isIgnored) return [];
@@ -112,14 +198,17 @@ const addPlayerVersion = ({entriesByName, source, vetMap, player, stats}) => {
 	if (!entry.flags?.[FLAG_SCOPE]?.folder && setFolder(entry, vetMap, {isPlayer: true})) { stats.scenesFoldered++; added.push("folder"); }
 
 	const dm = entriesByName.get(vetMap.name);
-	if (!dm) return added;
+	if (!dm) return [...added, ...matchPlayerDirectly({entry, source, player, ctx, stats}).added];
 	const frameDm = getPlutFrame(vetMap);
 	const framePlayer = getPlutFrame(player);
 	const xf = getPlayerTransform({frameDm, framePlayer});
-	if (!xf) return added;
+	if (!xf) {
+		const direct = matchPlayerDirectly({entry, source, player, ctx, stats});
+		return [...added, ...direct.added];
+	}
 
 	if (!entry.walls?.length && dm.walls?.length) {
-		entry.walls = retargetWalls({walls: dm.walls, xf});
+		entry.walls = retargetWalls({walls: dm.walls, xf, framePlayer});
 		stats.walls += entry.walls.length; stats.scenesWalled++; added.push("walls");
 	}
 	if (!entry.lights?.length && dm.lights?.length) {
@@ -140,6 +229,7 @@ const run = () => {
 
 	const vetMaps = loadVetoolsMaps(params.vet);
 	const bestiary = loadVetoolsBestiary(params.vet);
+	const aliases = loadCreatureAliases(params.vet);
 	const ddbScenes = loadDdbScenes(params.ddb);
 	const bookSources = inferBookSources({ddbScenes, vetMaps});
 
@@ -151,6 +241,7 @@ const run = () => {
 	const sources = new Set([...Object.keys(index), ...vetMaps.map(m => m.source)]);
 	for (const source of [...sources].sort()) {
 		const books = bookSources.get(source);
+		const ctx = {bestiary, aliases, ddbScenes, books};
 		const vetMapsForSource = vetMaps.filter(m => m.source === source);
 		if (!books?.size && !vetMapsForSource.length) continue;
 
@@ -183,37 +274,14 @@ const run = () => {
 				continue;
 			}
 
-			const {scene, xf, framePlut} = match;
-			const added = [];
-
-			if (!entry.lights?.length && scene.lights.length) {
-				const lights = convertLights({lights: scene.lights, xf, frameDdb: scene.frame, framePlut});
-				if (lights.length) { entry.lights = lights; stats.lights += lights.length; stats.scenesLit++; added.push("lights"); }
-			}
-
-			if (!entry.walls?.length && scene.walls.length) {
-				const walls = convertWalls({walls: scene.walls, xf});
-				if (walls.length) { entry.walls = walls; stats.walls += walls.length; stats.scenesWalled++; added.push("walls"); }
-			}
-
-			if (scene.tokens.length) {
-				const tokens = convertTokens({tokens: scene.tokens, xf, frameDdb: scene.frame, framePlut, source, bestiary});
-				if (tokens.length) {
-					entry.flags = {
-						...entry.flags,
-						[FLAG_SCOPE]: {...entry.flags?.[FLAG_SCOPE], tokens, ddbScene: scene.file},
-					};
-					stats.tokens += tokens.length; stats.scenesPopulated++; added.push("tokens");
-				}
-			}
-
-			report.push({source, name: entry.name, status: "matched", method: match.method, score: match.score && Number(match.score.toFixed(3)), scale: Number(xf.s.toFixed(4)), ddbScene: scene.file, added});
+			const added = applyMatch({entry, match, source, ctx, stats});
+			report.push(getMatchReport({source, entry, match, added}));
 			if (added.length) isChanged = true;
 		}
 
 		for (const vetMap of vetMapsForSource) {
 			for (const player of vetMap.players ?? []) {
-				const added = addPlayerVersion({entriesByName, source, vetMap, player, stats});
+				const added = addPlayerVersion({entriesByName, source, vetMap, player, ctx, stats});
 				if (added.length) { isChanged = true; report.push({source, name: player.name, status: "player", dm: vetMap.name, added}); }
 			}
 		}

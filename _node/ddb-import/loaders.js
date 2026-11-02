@@ -96,6 +96,37 @@ export const loadVetoolsMaps = vetDir => {
 	return out;
 };
 
+const CREATURE_TAG = /\{@creature ([^|}]+)(?:\|([^|}]*))?(?:\|([^}]*))?\}/g;
+
+/**
+ * The names a book's text gives creatures through tag display text: "{@creature Gray Ooze||Prince
+ * Livid}" says Prince Livid is a gray ooze. Source id -> normalised display name -> {name, source}
+ * (an empty tag source means the Monster Manual). Names used for two different creatures are dropped.
+ */
+export const loadCreatureAliases = vetDir => {
+	const out = new Map();
+	for (const [dir, indexFile, prop] of [["adventure", "adventures.json", "adventure"], ["book", "books.json", "book"]]) {
+		for (const meta of readJson(path.join(vetDir, indexFile))[prop]) {
+			const file = path.join(vetDir, dir, `${dir}-${meta.id.toLowerCase()}.json`);
+			if (!fs.existsSync(file)) continue;
+			const aliases = new Map();
+			for (const [, name, source, display] of fs.readFileSync(file, "utf-8").matchAll(CREATURE_TAG)) {
+				if (!display || normName(display) === normName(name)) continue;
+				const k = normName(display);
+				const creature = {name: name.trim(), source: source?.trim() || "MM"};
+				const prev = aliases.get(k);
+				if (prev === undefined) aliases.set(k, creature);
+				else if (prev && (normName(prev.name) !== normName(creature.name) || prev.source.toLowerCase() !== creature.source.toLowerCase())) aliases.set(k, null);
+			}
+			const src = (meta.source ?? meta.id).toLowerCase();
+			const merged = out.get(src) ?? new Map();
+			for (const [k, v] of aliases) if (v) merged.set(k, v);
+			out.set(src, merged);
+		}
+	}
+	return out;
+};
+
 /** 5etools source id -> publication date ("2014-09-30"), for adventures and books. */
 export const loadSourceDates = vetDir => {
 	const out = new Map();

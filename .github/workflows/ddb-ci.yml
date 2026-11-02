@@ -1,0 +1,24 @@
+name: DDB generator checks
+
+# Lint and unit tests for the DDB generator on pull requests. Pushes to main run the same checks
+# in ddb-sync.yml before building. Upstream's own files are not linted here.
+
+on:
+  pull_request:
+    paths: [ "_node/ddb-import/**", ".github/workflows/ddb-*.yml" ]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    if: github.repository == 'Aiacos/plutonium-scenes'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+      - run: npm ci
+      - run: npx eslint _node/ddb-import
+      - run: node --test _node/ddb-import/test/

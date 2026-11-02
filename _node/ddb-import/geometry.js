@@ -134,6 +134,19 @@ const coverage = (D, P, hashP, {s, tx, ty}, tol) => {
 };
 
 /**
+ * How well DDB walls land on Plutonium walls under a given transform, without fitting one.
+ * @return {?{coverageDdb, coveragePlut, score}}
+ */
+export const scoreTransform = ({wallsDdb, wallsPlut, xf, gridPlut = 100}) => {
+	if (wallsDdb.length < 3 || wallsPlut.length < 3) return null;
+	const tol = Math.max(gridPlut * 0.2, 6);
+	const D = densify(wallsDdb, tol / (2 * xf.s));
+	const P = densify(wallsPlut, tol / 2);
+	const cov = coverage(D, P, new SpatialHash(P, tol * 4), xf, tol);
+	return {...cov, score: Math.min(cov.coverageDdb, cov.coveragePlut)};
+};
+
+/**
  * @param wallsDdb walls of the DDB scene
  * @param wallsPlut walls of the Plutonium scene
  * @param scaleHints candidate scales (e.g. from image dimensions)
