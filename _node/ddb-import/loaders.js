@@ -108,7 +108,7 @@ export const loadSourceDates = vetDir => {
 };
 
 /**
- * Every official 5etools creature, indexed by normalised name -> [{name, source, published, reprintedAs}].
+ * Every official 5etools creature, indexed by normalised name -> [{name, source, published, reprintedAs, alias}].
  * `reprintedAs` ("Goblin Warrior|XMM") links a 2014 statblock to its 2024 replacement.
  */
 export const loadVetoolsBestiary = vetDir => {
@@ -126,6 +126,7 @@ export const loadVetoolsBestiary = vetDir => {
 				source: mon.source,
 				published: dates.get(mon.source) ?? null,
 				...(mon.reprintedAs?.length ? {reprintedAs: mon.reprintedAs.map(it => typeof it === "string" ? it : it.uid)} : {}),
+				...(mon.alias?.length ? {alias: mon.alias} : {}),
 			});
 		}
 	}

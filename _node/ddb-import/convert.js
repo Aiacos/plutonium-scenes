@@ -1,6 +1,6 @@
 import {WallDataOptimizer} from "../convert-foundry-data/EntityDataOptimizer/WallDataOptimizer.js";
 import {LightDataOptimizer} from "../convert-foundry-data/EntityDataOptimizer/LightDataOptimizer.js";
-import {normName} from "./loaders.js";
+import {nameSimilarity, normName} from "./loaders.js";
 
 const wallOptimizer = new WallDataOptimizer();
 const lightOptimizer = new LightDataOptimizer();
@@ -176,16 +176,106 @@ export const pickCreature = (candidates, edition, bestiary) => {
 
 const toRef = creature => ({name: creature.name, source: creature.source});
 
+/* -------------------------------------------- */
+/* Adventure NPCs                                */
+/* -------------------------------------------- */
+
+const nameWords = str => (str || "").toLowerCase().replace(/['’"]/g, "").split(/[^a-z0-9]+/).filter(Boolean);
+
+const sourceCreatures = new WeakMap();
+const commonWords = new WeakMap();
+
+/** The creatures a book itself defines: its named NPCs and variants. */
+const getSourceCreatures = (bestiary, source) => {
+	if (!sourceCreatures.has(bestiary)) sourceCreatures.set(bestiary, new Map());
+	const cache = sourceCreatures.get(bestiary);
+	const key = (source ?? "").toLowerCase();
+	if (!cache.has(key)) cache.set(key, [...bestiary.values()].flat().filter(c => c.source.toLowerCase() === key));
+	return cache.get(key);
+};
+
+/**
+ * Words used in creature names across several books ("stone", "king", "prisoner"): a first name
+ * must not be one of them, or "Stone Giant of Deadstone Cleft" would match "Stone Giant Statue".
+ */
+const getCommonWords = bestiary => {
+	if (!commonWords.has(bestiary)) {
+		const sourcesByWord = new Map();
+		for (const c of [...bestiary.values()].flat()) {
+			for (const w of nameWords(c.name)) {
+				if (!sourcesByWord.has(w)) sourcesByWord.set(w, new Set());
+				sourcesByWord.get(w).add(c.source);
+			}
+		}
+		commonWords.set(bestiary, new Set([...sourcesByWord].filter(([, sources]) => sources.size > 1).map(([w]) => w)));
+	}
+	return commonWords.get(bestiary);
+};
+
+const getNumbers = words => words.filter(w => /\d/.test(w)).join(" ");
+
+const unique = arr => arr.length === 1 ? arr[0] : null;
+
+/**
+ * The book's own statblock for a named token. DDB places adventure NPCs with a generic statblock
+ * and a personal name ("Danika Martikov" as a Commoner), and its names differ from 5etools':
+ *   exact or alias      "Rictavio"           -> Rictavio
+ *   every word          "Rose Durst"         -> Rosavalda "Rose" Durst, "Brom" -> Brom Martikov
+ *   same first name     "Danika Martikov"    -> Danika Dorakova (unique, and not a word other books use)
+ *   near-identical      "Cloven Belview"     -> Clovin Belview
+ * A name that is itself a creature ("Guard", "Wolf") only matches exactly.
+ */
+export const findBookCreature = ({name, source, bestiary}) => {
+	const own = getSourceCreatures(bestiary, source);
+	if (!own.length) return null;
+	const k = normName(name);
+	if (!k) return null;
+	const exact = own.find(c => normName(c.name) === k || c.alias?.some(a => normName(a) === k));
+	if (exact) return exact;
+	if (bestiary.has(k)) return null;
+
+	const words = nameWords(name);
+	// "Prisoner 6" is not "Prisoner 13"
+	const numbers = getNumbers(words);
+	const others = own.filter(c => getNumbers(nameWords(c.name)) === numbers);
+	const bySubset = others.filter(c => {
+		const cw = new Set(nameWords(c.name));
+		return words.every(w => cw.has(w));
+	});
+	if (bySubset.length) return unique(bySubset);
+
+	if (words.length > 1 && !getCommonWords(bestiary).has(words[0])) {
+		const byFirst = unique(others.filter(c => nameWords(c.name)[0] === words[0]));
+		if (byFirst) return byFirst;
+	}
+	return unique(others.filter(c => nameSimilarity(c.name, name) >= 0.85));
+};
+
 /** @return {?{"2024": {name, source}, "2014": {name, source}}} */
-export const resolveCreatures = ({token, bestiary}) => {
+export const resolveCreatures = ({token, source, bestiary}) => {
 	const ddbName = token.flags?.ddbActorFlags?.name;
-	for (const name of [ddbName, token.name, stripTokenSuffix(token.name)]) {
+	const tokenName = stripTokenSuffix(token.name);
+	const asNpc = npc => ({"2024": toRef(npc), "2014": toRef(npc), npc: true});
+
+	// A personal name on a generic statblock: the book's own NPC beats the generic one
+	if (ddbName && normName(tokenName) !== normName(ddbName)) {
+		const npc = findBookCreature({name: tokenName, source, bestiary});
+		if (npc) return asNpc(npc);
+	}
+
+	for (const name of [ddbName, token.name, tokenName]) {
 		const candidates = bestiary.get(normName(name));
 		if (!candidates?.length) continue;
 		return {
 			"2024": toRef(pickCreature(candidates, "2024", bestiary)),
 			"2014": toRef(pickCreature(candidates, "2014", bestiary)),
 		};
+	}
+
+	// DDB's own NPC actor, named differently from 5etools ("Rose Durst")
+	for (const name of new Set([ddbName, token.name, tokenName].filter(Boolean))) {
+		const npc = findBookCreature({name, source, bestiary});
+		if (npc) return asNpc(npc);
 	}
 	return null;
 };
@@ -194,19 +284,20 @@ export const resolveCreatures = ({token, bestiary}) => {
  * Tokens are stored as data, not TokenDocuments: placing them needs actors, which only the
  * companion Foundry module can import (from official compendiums or via Plutonium).
  */
-export const convertTokens = ({tokens, xf, frameDdb, framePlut, bestiary}) => tokens
+export const convertTokens = ({tokens, xf, frameDdb, framePlut, source, bestiary}) => tokens
 	.filter(t => Number.isFinite(t.x) && Number.isFinite(t.y))
 	.map(t => {
 		const width = t.width || 1;
 		const height = t.height || 1;
 		// Transform the centre: DDB and Plutonium grid cells differ in size, the creature size does not
 		const [cx, cy] = applyPoint(xf, t.x + width * frameDdb.gridSize / 2, t.y + height * frameDdb.gridSize / 2);
-		const creatures = resolveCreatures({token: t, bestiary});
+		const {npc, ...creatures} = resolveCreatures({token: t, source, bestiary}) ?? {};
 		return {
 			name: t.name,
 			ddbName: t.flags?.ddbActorFlags?.name ?? t.name,
 			ddbId: t.flags?.ddbActorFlags?.id ?? null,
-			...(creatures ? {creatures} : {}),
+			...(creatures["2024"] ? {creatures} : {}),
+			...(npc ? {npc} : {}),
 			x: round(cx - width * framePlut.gridSize / 2),
 			y: round(cy - height * framePlut.gridSize / 2),
 			width,

@@ -197,7 +197,7 @@ const run = () => {
 			}
 
 			if (scene.tokens.length) {
-				const tokens = convertTokens({tokens: scene.tokens, xf, frameDdb: scene.frame, framePlut, bestiary});
+				const tokens = convertTokens({tokens: scene.tokens, xf, frameDdb: scene.frame, framePlut, source, bestiary});
 				if (tokens.length) {
 					entry.flags = {
 						...entry.flags,
