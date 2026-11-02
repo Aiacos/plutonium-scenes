@@ -95,29 +95,52 @@ export const convertWalls = ({walls, xf}) => {
 /** "Goblin 3", "Goblin (A)", "Goblin #2" -> "Goblin" */
 const stripTokenSuffix = name => (name || "").replace(/\s*(\(.*?\)|#?\d+|[A-Z])$/, "").trim();
 
-/**
- * Pick the 5etools creature a DDB token stands for, among every bestiary entry sharing its name.
- *
- * @param candidates {Array<{name: string, source: string}>} 5etools creatures with this name (≥1)
- * @param mapSource {string} 5etools source of the adventure/book the map belongs to (e.g. "LMoP")
- * @return {{name: string, source: string}}
- */
-export const pickCreature = (candidates, mapSource) => {
-	// The adventure's own statblock first (unique NPCs, adventure-specific variants), then the
-	// 2014 Monster Manual the DDB adventures were written against, then the 2024 one.
-	const preference = [mapSource, "MM", "XMM"];
-	for (const source of preference) {
-		const hit = candidates.find(c => c.source === source);
-		if (hit) return hit;
-	}
-	return candidates[0];
+/** The 2024 core rules (XPHB) came out on this date; later books use the 2024 statblock format. */
+const EDITION_2024_START = "2024-09-17";
+
+const getEdition = creature => creature.published && creature.published >= EDITION_2024_START ? "2024" : "2014";
+
+const byNewest = (a, b) => (b.published ?? "").localeCompare(a.published ?? "");
+
+/** "Goblin Warrior|XMM" -> the bestiary entry */
+const getByUid = (bestiary, uid) => {
+	const [name, source] = uid.split("|");
+	return bestiary.get(normName(name))?.find(c => c.source.toLowerCase() === (source ?? "").toLowerCase()) ?? null;
 };
 
-export const resolveCreature = ({token, bestiary, mapSource}) => {
+/**
+ * Pick the 5etools creature a DDB token stands for in one rules edition, among every bestiary entry
+ * sharing its name: the most recently published statblock of that edition. For 2024, a 2014-only
+ * name follows its `reprintedAs` link ("Goblin" -> "Goblin Warrior"). Without a statblock in the
+ * edition, the newest one of any edition is used.
+ */
+export const pickCreature = (candidates, edition, bestiary) => {
+	const sorted = [...candidates].sort(byNewest);
+	const inEdition = sorted.find(c => getEdition(c) === edition);
+	if (inEdition) return inEdition;
+	if (edition === "2024") {
+		const reprint = sorted
+			.flatMap(c => c.reprintedAs ?? [])
+			.map(uid => getByUid(bestiary, uid))
+			.filter(Boolean)
+			.sort(byNewest)[0];
+		if (reprint) return reprint;
+	}
+	return sorted[0];
+};
+
+const toRef = creature => ({name: creature.name, source: creature.source});
+
+/** @return {?{"2024": {name, source}, "2014": {name, source}}} */
+export const resolveCreatures = ({token, bestiary}) => {
 	const ddbName = token.flags?.ddbActorFlags?.name;
 	for (const name of [ddbName, token.name, stripTokenSuffix(token.name)]) {
 		const candidates = bestiary.get(normName(name));
-		if (candidates?.length) return pickCreature(candidates, mapSource);
+		if (!candidates?.length) continue;
+		return {
+			"2024": toRef(pickCreature(candidates, "2024", bestiary)),
+			"2014": toRef(pickCreature(candidates, "2014", bestiary)),
+		};
 	}
 	return null;
 };
@@ -126,19 +149,19 @@ export const resolveCreature = ({token, bestiary, mapSource}) => {
  * Tokens are stored as data, not TokenDocuments: placing them needs actors, which only the
  * companion Foundry module can import (from official compendiums or via Plutonium).
  */
-export const convertTokens = ({tokens, xf, frameDdb, framePlut, bestiary, mapSource}) => tokens
+export const convertTokens = ({tokens, xf, frameDdb, framePlut, bestiary}) => tokens
 	.filter(t => Number.isFinite(t.x) && Number.isFinite(t.y))
 	.map(t => {
 		const width = t.width || 1;
 		const height = t.height || 1;
 		// Transform the centre: DDB and Plutonium grid cells differ in size, the creature size does not
 		const [cx, cy] = applyPoint(xf, t.x + width * frameDdb.gridSize / 2, t.y + height * frameDdb.gridSize / 2);
-		const creature = resolveCreature({token: t, bestiary, mapSource});
+		const creatures = resolveCreatures({token: t, bestiary});
 		return {
 			name: t.name,
 			ddbName: t.flags?.ddbActorFlags?.name ?? t.name,
 			ddbId: t.flags?.ddbActorFlags?.id ?? null,
-			...(creature ? {creature} : {}),
+			...(creatures ? {creatures} : {}),
 			x: round(cx - width * framePlut.gridSize / 2),
 			y: round(cy - height * framePlut.gridSize / 2),
 			width,

@@ -28,30 +28,68 @@ export const nameSimilarity = (a, b) => {
 /* 5etools                                       */
 /* -------------------------------------------- */
 
-const walkMapImages = (obj, out, source) => {
-	if (Array.isArray(obj)) return obj.forEach(it => walkMapImages(it, out, source));
+const walkMapImages = (obj, out, meta) => {
+	if (Array.isArray(obj)) return obj.forEach(it => walkMapImages(it, out, meta));
 	if (!obj || typeof obj !== "object") return;
 	if (obj.type === "image" && obj.imageType === "map" && obj.title) {
-		out.push({source, name: obj.title, width: obj.width, height: obj.height, grid: obj.grid || {}});
+		out.push({...meta, name: obj.title, width: obj.width, height: obj.height, grid: obj.grid || {}, order: out.length});
 	}
-	Object.values(obj).forEach(it => walkMapImages(it, out, source));
+	Object.values(obj).forEach(it => walkMapImages(it, out, meta));
 };
 
-/** DM map images of every 5etools adventure and book, i.e. the scenes Plutonium can import. */
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+/** "Part 1: Goblin Arrows", "Appendix A: Magic Items", "Introduction": the book's table of contents. */
+const getChapterName = contentsEntry => {
+	const {name, ordinal} = contentsEntry ?? {};
+	if (!ordinal) return name;
+	return `${capitalize(ordinal.type)} ${ordinal.identifier}: ${name}`;
+};
+
+/**
+ * DM map images of every 5etools adventure and book, i.e. the scenes Plutonium can import, with the
+ * book chapter each one appears in. A book's top-level `data` sections line up with the `contents` of
+ * its index entry, so the section index is the chapter index.
+ */
 export const loadVetoolsMaps = vetDir => {
 	const out = [];
 	for (const [dir, indexFile, prop] of [["adventure", "adventures.json", "adventure"], ["book", "books.json", "book"]]) {
 		for (const meta of readJson(path.join(vetDir, indexFile))[prop]) {
 			const file = path.join(vetDir, dir, `${dir}-${meta.id.toLowerCase()}.json`);
 			if (!fs.existsSync(file)) continue;
-			walkMapImages(readJson(file), out, meta.source ?? meta.id);
+			const sections = readJson(file)[`${prop}Data`]?.[0]?.data ?? [];
+			const mapsBook = [];
+			sections.forEach((section, chapterIx) => {
+				walkMapImages(section, mapsBook, {
+					source: meta.source ?? meta.id,
+					bookName: meta.name,
+					chapterIx,
+					chapterName: getChapterName(meta.contents?.[chapterIx]) ?? section.name,
+				});
+			});
+			out.push(...mapsBook);
 		}
 	}
 	return out;
 };
 
-/** normalised creature name -> [{name, source}], from every official 5etools bestiary file. */
+/** 5etools source id -> publication date ("2014-09-30"), for adventures and books. */
+export const loadSourceDates = vetDir => {
+	const out = new Map();
+	for (const [indexFile, prop] of [["adventures.json", "adventure"], ["books.json", "book"]]) {
+		for (const meta of readJson(path.join(vetDir, indexFile))[prop]) {
+			if (meta.published) out.set(meta.source ?? meta.id, meta.published);
+		}
+	}
+	return out;
+};
+
+/**
+ * Every official 5etools creature, indexed by normalised name -> [{name, source, published, reprintedAs}].
+ * `reprintedAs` ("Goblin Warrior|XMM") links a 2014 statblock to its 2024 replacement.
+ */
 export const loadVetoolsBestiary = vetDir => {
+	const dates = loadSourceDates(vetDir);
 	const dir = path.join(vetDir, "bestiary");
 	const out = new Map();
 	for (const file of fs.readdirSync(dir)) {
@@ -60,7 +98,12 @@ export const loadVetoolsBestiary = vetDir => {
 			if (!mon.name || !mon.source) continue;
 			const k = normName(mon.name);
 			if (!out.has(k)) out.set(k, []);
-			out.get(k).push({name: mon.name, source: mon.source});
+			out.get(k).push({
+				name: mon.name,
+				source: mon.source,
+				published: dates.get(mon.source) ?? null,
+				...(mon.reprintedAs?.length ? {reprintedAs: mon.reprintedAs.map(it => typeof it === "string" ? it : it.uid)} : {}),
+			});
 		}
 	}
 	return out;

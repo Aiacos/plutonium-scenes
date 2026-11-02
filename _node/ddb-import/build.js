@@ -80,6 +80,22 @@ const matchEntry = ({entry, vetMap, candidates}) => {
 	return {status: "matched", method: "bounds", scene: exact.scene, xf: getAnalyticTransform({frameDdb: exact.scene.frame, framePlut}), score: null, framePlut};
 };
 
+/**
+ * Book > chapter folder for the companion module, mirroring DDB Importer's adventure layout. `sort`
+ * keeps chapters and maps in reading order, which alphabetical folder sorting would scramble.
+ */
+const setFolder = (entry, vetMap) => {
+	if (!vetMap.bookName || !vetMap.chapterName) return false;
+	entry.flags = {
+		...entry.flags,
+		[FLAG_SCOPE]: {
+			...entry.flags?.[FLAG_SCOPE],
+			folder: {path: [vetMap.bookName, vetMap.chapterName], sort: [vetMap.chapterIx, vetMap.order]},
+		},
+	};
+	return true;
+};
+
 const run = () => {
 	const params = getParams();
 
@@ -91,18 +107,18 @@ const run = () => {
 	const fpathIndex = path.join(DIR_DATA, "foundry-index.json");
 	const index = readJsonSync(fpathIndex);
 	const report = [];
-	const stats = {lights: 0, walls: 0, tokens: 0, scenesLit: 0, scenesWalled: 0, scenesPopulated: 0, unmatched: 0};
+	const stats = {lights: 0, walls: 0, tokens: 0, scenesLit: 0, scenesWalled: 0, scenesPopulated: 0, scenesFoldered: 0, unmatched: 0};
 
 	const sources = new Set([...Object.keys(index), ...vetMaps.map(m => m.source)]);
 	for (const source of [...sources].sort()) {
 		const books = bookSources.get(source);
-		if (!books?.size) continue;
+		const vetMapsForSource = vetMaps.filter(m => m.source === source);
+		if (!books?.size && !vetMapsForSource.length) continue;
 
 		const fname = index[source] ?? `foundry-maps-${source.toLowerCase()}.json`;
 		const fpath = path.join(DIR_DATA, fname);
 		const json = fs.existsSync(fpath) ? readJsonSync(fpath) : {map: []};
 
-		const vetMapsForSource = vetMaps.filter(m => m.source === source);
 		const entriesByName = new Map(json.map.map(e => [normName(e.name), e]));
 		// Every DM map Plutonium can import, plus entries the repo already has
 		for (const vetMap of vetMapsForSource) {
@@ -113,7 +129,10 @@ const run = () => {
 		for (const entry of entriesByName.values()) {
 			if (entry.isIgnored) continue;
 			const vetMap = vetMapsForSource.find(m => m.name === entry.name) ?? vetMapsForSource.find(m => normName(m.name) === normName(entry.name));
-			const candidates = getCandidates({entry, ddbScenes, books});
+
+			if (vetMap && setFolder(entry, vetMap)) { stats.scenesFoldered++; isChanged = true; }
+
+			const candidates = books?.size ? getCandidates({entry, ddbScenes, books}) : [];
 			if (!candidates.length) continue;
 
 			const match = matchEntry({entry, vetMap, candidates});
@@ -137,11 +156,11 @@ const run = () => {
 			}
 
 			if (scene.tokens.length) {
-				const tokens = convertTokens({tokens: scene.tokens, xf, frameDdb: scene.frame, framePlut, bestiary, mapSource: source});
+				const tokens = convertTokens({tokens: scene.tokens, xf, frameDdb: scene.frame, framePlut, bestiary});
 				if (tokens.length) {
 					entry.flags = {
 						...entry.flags,
-						[FLAG_SCOPE]: {tokens, ddbScene: scene.file},
+						[FLAG_SCOPE]: {...entry.flags?.[FLAG_SCOPE], tokens, ddbScene: scene.file},
 					};
 					stats.tokens += tokens.length; stats.scenesPopulated++; added.push("tokens");
 				}
