@@ -1,0 +1,148 @@
+{
+	"map": [
+		{
+			"name": "Map 1.1: Athkatla",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1.1: Athkatla (Player Version)",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							0.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1.2: Baldur's Gate",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1.2: Baldur's Gate (Player Version)",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							1.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1.3: Suldanessellar",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1.3: Suldanessellar (Player Version)",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							2.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1.4: Ust Natha",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							3
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1.4: Ust Natha (Player Version)",
+			"source": "MaBJoV",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Minsc and Boo's Journal of Villainy",
+							"Chapter 1: Hometowns"
+						],
+						"sort": [
+							2,
+							3.5
+						]
+					}
+				}
+			}
+		}
+	]
+}

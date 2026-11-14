@@ -1,0 +1,1112 @@
+{
+	"map": [
+		{
+			"name": "Map 3.1: Barovia",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							0
+						]
+					}
+				}
+			},
+			"lights": [
+				{
+					"x": 70,
+					"y": 1847,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 441,
+					"y": 1893,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 825,
+					"y": 1893,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1179,
+					"y": 1927,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1578,
+					"y": 1948,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1942,
+					"y": 1931,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2351,
+					"y": 1916,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2753,
+					"y": 1856,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2940,
+					"y": 1553,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2966,
+					"y": 1189,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2824,
+					"y": 851,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2832,
+					"y": 470,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2862,
+					"y": 109,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2426,
+					"y": 101,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1934,
+					"y": 83,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2205,
+					"y": -13,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1630,
+					"y": 42,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1303,
+					"y": 57,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 903,
+					"y": 66,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 505,
+					"y": 83,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 70,
+					"y": 103,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 64,
+					"y": 444,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 45,
+					"y": 787,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 36,
+					"y": 1179,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 49,
+					"y": 1572,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Map 3.1: Barovia (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							0.5
+						]
+					}
+				}
+			},
+			"lights": [
+				{
+					"x": 70,
+					"y": 1847,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 441,
+					"y": 1893,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 825,
+					"y": 1893,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1179,
+					"y": 1927,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1578,
+					"y": 1948,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1942,
+					"y": 1931,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2351,
+					"y": 1916,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2753,
+					"y": 1856,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2940,
+					"y": 1553,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2966,
+					"y": 1189,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2824,
+					"y": 851,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2832,
+					"y": 470,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2862,
+					"y": 109,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2426,
+					"y": 101,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1934,
+					"y": 83,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 2205,
+					"y": -13,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1630,
+					"y": 42,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 1303,
+					"y": 57,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 903,
+					"y": 66,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 505,
+					"y": 83,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 70,
+					"y": 103,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 64,
+					"y": 444,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 45,
+					"y": 787,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 36,
+					"y": 1179,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				},
+				{
+					"x": 49,
+					"y": 1572,
+					"config": {
+						"bright": 0.2,
+						"dim": 0.4,
+						"color": "#4a4760",
+						"animation": {
+							"type": "fog"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Map 3.10: Lamordia",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							9
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.10: Lamordia (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							9.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.11: Mordent",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							10
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.11: Mordent (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							10.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.12: Richemulot",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							11
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.12: Richemulot (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							11.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.13: Tepest",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							12
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.13: Tepest (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							12.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.14: Valachan",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							13
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.14: Valachan (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							13.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.2: Borca",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.2: Borca (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							1.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.3: Darkon",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.3: Darkon (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							2.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.4: Dementlieu",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							3
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.4: Dementlieu (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							3.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.5: Falkovnia",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							4
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.5: Falkovnia (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							4.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.6: Har'Akir",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.6: Har'Akir (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							5.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.7: Hazlan",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							6
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.7: Hazlan (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							6.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.8: Kalakeri",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							7
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.8: Kalakeri (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							7.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.9: Kartakass",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							8
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.9: Kartakass (Player Version)",
+			"source": "VRGR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Van Richten's Guide to Ravenloft",
+							"Chapter 3: Domains of Ravenloft"
+						],
+						"sort": [
+							3,
+							8.5
+						]
+					}
+				}
+			}
+		}
+	]
+}

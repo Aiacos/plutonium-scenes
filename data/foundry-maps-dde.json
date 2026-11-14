@@ -1,0 +1,220 @@
+{
+	"map": [
+		{
+			"name": "Ironclad Cove",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Ironclad Cove"
+						],
+						"sort": [
+							4,
+							5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Ironclad Cove (Player Version)",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Ironclad Cove"
+						],
+						"sort": [
+							4,
+							5.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1: Mine Tunnels",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Enter the Deadmines"
+						],
+						"sort": [
+							1,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1: Mine Tunnels (Player Version)",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Enter the Deadmines"
+						],
+						"sort": [
+							1,
+							0.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 2: Collapsed Passage",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Enter the Deadmines"
+						],
+						"sort": [
+							1,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 2: Collapsed Passage (Player Version)",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Enter the Deadmines"
+						],
+						"sort": [
+							1,
+							1.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3: Mast Room",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Enter the Deadmines"
+						],
+						"sort": [
+							1,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3: Mast Room (Player Version)",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Enter the Deadmines"
+						],
+						"sort": [
+							1,
+							2.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 4: Goblin Foundry",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Goblin Foundry"
+						],
+						"sort": [
+							2,
+							3
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 4: Goblin Foundry (Player Version)",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"Goblin Foundry"
+						],
+						"sort": [
+							2,
+							3.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 5: The Trials",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"The Trials"
+						],
+						"sort": [
+							3,
+							4
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 5: The Trials (Player Version)",
+			"source": "DDE",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Deadmines Dungeon",
+							"The Trials"
+						],
+						"sort": [
+							3,
+							4.5
+						]
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{
+	"map": [
+		{
+			"name": "Rubblebelt Encampment",
+			"source": "AZfyT",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"A Zib for Your Thoughts",
+							"A Zib for Your Thoughts"
+						],
+						"sort": [
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	]
+}

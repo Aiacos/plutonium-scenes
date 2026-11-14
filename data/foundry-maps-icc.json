@@ -1,0 +1,256 @@
+{
+	"map": [
+		{
+			"name": "Map 0.1: Light's Hammer",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Introduction: Wrath of the Lich King"
+						],
+						"sort": [
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 0.1: Light's Hammer (Player Version)",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Introduction: Wrath of the Lich King"
+						],
+						"sort": [
+							0,
+							0.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 0.2: Icecrown Citadel",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Introduction: Wrath of the Lich King"
+						],
+						"sort": [
+							0,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 0.2: Icecrown Citadel (Player Version)",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Introduction: Wrath of the Lich King"
+						],
+						"sort": [
+							0,
+							1.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1: Lower Spire and Rampart of Skulls",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 1: The Lower Spire"
+						],
+						"sort": [
+							1,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 1: Lower Spire and Rampart of Skulls (Player Version)",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 1: The Lower Spire"
+						],
+						"sort": [
+							1,
+							2.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 2: Saurfang's Rise, Upper Spire, and Plagueworks",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 2: The Plagueworks"
+						],
+						"sort": [
+							2,
+							3
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 2: Saurfang's Rise, Upper Spire, and Plagueworks (Player Version)",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 2: The Plagueworks"
+						],
+						"sort": [
+							2,
+							3.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3: Crimson Hall",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 3: The Crimson Hall"
+						],
+						"sort": [
+							3,
+							4
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3: Crimson Hall (Player Version)",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 3: The Crimson Hall"
+						],
+						"sort": [
+							3,
+							4.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 4: Frostwing Hall",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 4: Frostwing Hall"
+						],
+						"sort": [
+							4,
+							5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 4: Frostwing Hall (Player Version)",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 4: Frostwing Hall"
+						],
+						"sort": [
+							4,
+							5.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 5: The Frozen Throne",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 5: The Frozen Throne"
+						],
+						"sort": [
+							5,
+							6
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 5: The Frozen Throne (Player Version)",
+			"source": "ICC",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft: Icecrown Citadel",
+							"Chapter 5: The Frozen Throne"
+						],
+						"sort": [
+							5,
+							6.5
+						]
+					}
+				}
+			}
+		}
+	]
+}
