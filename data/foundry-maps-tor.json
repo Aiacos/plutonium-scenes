@@ -1,0 +1,3576 @@
+{
+	"map": [
+		{
+			"name": "Map 5.1: Palma Flora",
+			"source": "ToR",
+			"walls": [
+				{
+					"c": [
+						2118,
+						656,
+						2324,
+						656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2324,
+						656,
+						2324,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2324,
+						900,
+						2118,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2118,
+						900,
+						2118,
+						656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1800,
+						842,
+						2024,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2024,
+						842,
+						2024,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2024,
+						992,
+						1986,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1986,
+						992,
+						1986,
+						1106
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1986,
+						1106,
+						1856,
+						1106
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1856,
+						1106,
+						1856,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1856,
+						992,
+						1800,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1800,
+						992,
+						1800,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1180,
+						2042,
+						1180
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2042,
+						1180,
+						2042,
+						1368
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2042,
+						1368,
+						1818,
+						1368
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1368,
+						1818,
+						1180
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1518,
+						1912,
+						1518
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1912,
+						1518,
+						1912,
+						1612
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1912,
+						1612,
+						1818,
+						1612
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1612,
+						1818,
+						1518
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1612,
+						1086,
+						1724,
+						1086
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1724,
+						1086,
+						1724,
+						1350
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1724,
+						1350,
+						1612,
+						1350
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1612,
+						1350,
+						1612,
+						1086
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1592,
+						842,
+						1706,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1706,
+						842,
+						1706,
+						1050
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1706,
+						1050,
+						1592,
+						1050
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1592,
+						1050,
+						1592,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1368,
+						824,
+						1574,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1574,
+						824,
+						1574,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1574,
+						936,
+						1368,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1368,
+						936,
+						1368,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1180,
+						806,
+						1312,
+						806
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1312,
+						806,
+						1312,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1312,
+						936,
+						1180,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1180,
+						936,
+						1180,
+						806
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2924,
+						1836,
+						3300,
+						1836
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3300,
+						1836,
+						3300,
+						1950
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3300,
+						1950,
+						2924,
+						1950
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2924,
+						1950,
+						2924,
+						1836
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3168,
+						824,
+						3280,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3280,
+						824,
+						3280,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3280,
+						900,
+						3392,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3392,
+						900,
+						3392,
+						1012
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3392,
+						1012,
+						3168,
+						1012
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3168,
+						1012,
+						3168,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				}
+			],
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Tide of Retribution",
+							"Tide of Retribution"
+						],
+						"sort": [
+							0,
+							0
+						]
+					},
+					"tokens": [
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 3601,
+							"y": 3147,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 2777,
+							"y": 3147,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 2477,
+							"y": 2998,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 3376,
+							"y": 3222,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Elanza",
+							"ddbName": "Tribal Warrior",
+							"ddbId": 17038,
+							"creatures": {
+								"2014": {
+									"name": "Tribal Warrior",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Warrior Infantry",
+									"source": "XMM"
+								}
+							},
+							"x": 3526,
+							"y": 2848,
+							"width": 1,
+							"height": 1,
+							"disposition": 1
+						},
+						{
+							"name": "Joao",
+							"ddbName": "Tribal Warrior",
+							"ddbId": 17038,
+							"creatures": {
+								"2014": {
+									"name": "Tribal Warrior",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Warrior Infantry",
+									"source": "XMM"
+								}
+							},
+							"x": 3376,
+							"y": 2923,
+							"width": 1,
+							"height": 1,
+							"disposition": 1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 1728,
+							"y": 1500,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Reef Shark",
+							"ddbName": "Reef Shark",
+							"ddbId": 16994,
+							"creatures": {
+								"2014": {
+									"name": "Reef Shark",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Reef Shark",
+									"source": "XMM"
+								}
+							},
+							"x": 2252,
+							"y": 226,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Reef Shark",
+							"ddbName": "Reef Shark",
+							"ddbId": 16994,
+							"creatures": {
+								"2014": {
+									"name": "Reef Shark",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Reef Shark",
+									"source": "XMM"
+								}
+							},
+							"x": 2402,
+							"y": 226,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Reef Shark",
+							"ddbName": "Reef Shark",
+							"ddbId": 16994,
+							"creatures": {
+								"2014": {
+									"name": "Reef Shark",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Reef Shark",
+									"source": "XMM"
+								}
+							},
+							"x": 2402,
+							"y": 451,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 2103,
+							"y": 376,
+							"width": 1,
+							"height": 1,
+							"disposition": -1,
+							"hidden": true
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2327,
+							"y": 376,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2178,
+							"y": 226,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2402,
+							"y": 301,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2252,
+							"y": 301,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2552,
+							"y": 226,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2477,
+							"y": 376,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Aurelio",
+							"ddbName": "Acolyte",
+							"ddbId": 16763,
+							"creatures": {
+								"2014": {
+									"name": "Acolyte",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Priest Acolyte",
+									"source": "XMM"
+								}
+							},
+							"x": 3601,
+							"y": 1649,
+							"width": 1,
+							"height": 1,
+							"disposition": 1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 4050,
+							"y": 1350,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 3751,
+							"y": 1350,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 3900,
+							"y": 1200,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 3900,
+							"y": 1500,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 4125,
+							"y": 1275,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 3825,
+							"y": 1425,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 4050,
+							"y": 1574,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 4275,
+							"y": 1200,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 3975,
+							"y": 1125,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 3975,
+							"y": 1500,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						}
+					],
+					"ddbScene": "egtw-10101-984-Map51PalmaFlora-player-scene.json"
+				}
+			},
+			"lights": [
+				{
+					"x": 2739,
+					"y": 1462,
+					"config": {
+						"bright": 224.7,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 2739,
+					"y": 1462,
+					"config": {
+						"bright": 0,
+						"dim": 224.7,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 3113,
+					"y": 1986,
+					"config": {
+						"bright": 9.99,
+						"dim": 19.97,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 4237,
+					"y": 1686,
+					"config": {
+						"bright": 9.99,
+						"dim": 19.97,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 2701,
+					"y": 675,
+					"config": {
+						"bright": 9.99,
+						"dim": 19.97,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1952,
+					"y": 1387,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1540,
+					"y": 975,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 2102,
+					"y": 825,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1278,
+					"y": 788,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1803,
+					"y": 1050,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 4462,
+					"y": 1911,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 3376,
+					"y": 1050,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1615,
+					"y": 1387,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1840,
+					"y": 1611,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Map 5.1: Palma Flora (Player Version)",
+			"source": "ToR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Tide of Retribution",
+							"Tide of Retribution"
+						],
+						"sort": [
+							0,
+							0.5
+						]
+					},
+					"tokens": [
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 3602,
+							"y": 3148,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 2778,
+							"y": 3148,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 2478,
+							"y": 2999,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 3377,
+							"y": 3223,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Elanza",
+							"ddbName": "Tribal Warrior",
+							"ddbId": 17038,
+							"creatures": {
+								"2014": {
+									"name": "Tribal Warrior",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Warrior Infantry",
+									"source": "XMM"
+								}
+							},
+							"x": 3527,
+							"y": 2849,
+							"width": 1,
+							"height": 1,
+							"disposition": 1
+						},
+						{
+							"name": "Joao",
+							"ddbName": "Tribal Warrior",
+							"ddbId": 17038,
+							"creatures": {
+								"2014": {
+									"name": "Tribal Warrior",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Warrior Infantry",
+									"source": "XMM"
+								}
+							},
+							"x": 3377,
+							"y": 2924,
+							"width": 1,
+							"height": 1,
+							"disposition": 1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 1729,
+							"y": 1501,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Reef Shark",
+							"ddbName": "Reef Shark",
+							"ddbId": 16994,
+							"creatures": {
+								"2014": {
+									"name": "Reef Shark",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Reef Shark",
+									"source": "XMM"
+								}
+							},
+							"x": 2253,
+							"y": 227,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Reef Shark",
+							"ddbName": "Reef Shark",
+							"ddbId": 16994,
+							"creatures": {
+								"2014": {
+									"name": "Reef Shark",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Reef Shark",
+									"source": "XMM"
+								}
+							},
+							"x": 2403,
+							"y": 227,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Reef Shark",
+							"ddbName": "Reef Shark",
+							"ddbId": 16994,
+							"creatures": {
+								"2014": {
+									"name": "Reef Shark",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Reef Shark",
+									"source": "XMM"
+								}
+							},
+							"x": 2403,
+							"y": 452,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 2104,
+							"y": 377,
+							"width": 1,
+							"height": 1,
+							"disposition": -1,
+							"hidden": true
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2328,
+							"y": 377,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2179,
+							"y": 227,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2403,
+							"y": 302,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2253,
+							"y": 302,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2553,
+							"y": 227,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commoner",
+							"ddbName": "Commoner",
+							"ddbId": 16829,
+							"creatures": {
+								"2014": {
+									"name": "Commoner",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Commoner",
+									"source": "WttHC"
+								}
+							},
+							"x": 2478,
+							"y": 377,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Aurelio",
+							"ddbName": "Acolyte",
+							"ddbId": 16763,
+							"creatures": {
+								"2014": {
+									"name": "Acolyte",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Priest Acolyte",
+									"source": "XMM"
+								}
+							},
+							"x": 3602,
+							"y": 1650,
+							"width": 1,
+							"height": 1,
+							"disposition": 1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 4051,
+							"y": 1351,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 3752,
+							"y": 1351,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 3901,
+							"y": 1201,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Bandit",
+							"ddbName": "Bandit",
+							"ddbId": 16798,
+							"creatures": {
+								"2014": {
+									"name": "Bandit",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Bandit",
+									"source": "XMM"
+								}
+							},
+							"x": 3901,
+							"y": 1501,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 4126,
+							"y": 1276,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 3826,
+							"y": 1426,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 4051,
+							"y": 1575,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Sahuagin",
+							"ddbName": "Sahuagin",
+							"ddbId": 17003,
+							"creatures": {
+								"2014": {
+									"name": "Sahuagin",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Sahuagin Warrior",
+									"source": "XMM"
+								}
+							},
+							"x": 4276,
+							"y": 1201,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 3976,
+							"y": 1126,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Giant Crab",
+							"ddbName": "Giant Crab",
+							"ddbId": 16879,
+							"creatures": {
+								"2014": {
+									"name": "Giant Crab",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Giant Crab",
+									"source": "XMM"
+								}
+							},
+							"x": 3976,
+							"y": 1501,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						}
+					],
+					"ddbScene": "egtw-10101-984-Map51PalmaFlora-player-scene.json"
+				}
+			},
+			"walls": [
+				{
+					"c": [
+						2118,
+						656,
+						2324,
+						656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2324,
+						656,
+						2324,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2324,
+						900,
+						2118,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2118,
+						900,
+						2118,
+						656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1800,
+						842,
+						2024,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2024,
+						842,
+						2024,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2024,
+						992,
+						1986,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1986,
+						992,
+						1986,
+						1106
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1986,
+						1106,
+						1856,
+						1106
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1856,
+						1106,
+						1856,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1856,
+						992,
+						1800,
+						992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1800,
+						992,
+						1800,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1180,
+						2042,
+						1180
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2042,
+						1180,
+						2042,
+						1368
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2042,
+						1368,
+						1818,
+						1368
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1368,
+						1818,
+						1180
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1518,
+						1912,
+						1518
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1912,
+						1518,
+						1912,
+						1612
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1912,
+						1612,
+						1818,
+						1612
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1818,
+						1612,
+						1818,
+						1518
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1612,
+						1086,
+						1724,
+						1086
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1724,
+						1086,
+						1724,
+						1350
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1724,
+						1350,
+						1612,
+						1350
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1612,
+						1350,
+						1612,
+						1086
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1592,
+						842,
+						1706,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1706,
+						842,
+						1706,
+						1050
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1706,
+						1050,
+						1592,
+						1050
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1592,
+						1050,
+						1592,
+						842
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1368,
+						824,
+						1574,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1574,
+						824,
+						1574,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1574,
+						936,
+						1368,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1368,
+						936,
+						1368,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1180,
+						806,
+						1312,
+						806
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1312,
+						806,
+						1312,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1312,
+						936,
+						1180,
+						936
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1180,
+						936,
+						1180,
+						806
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2924,
+						1836,
+						3300,
+						1836
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3300,
+						1836,
+						3300,
+						1950
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3300,
+						1950,
+						2924,
+						1950
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2924,
+						1950,
+						2924,
+						1836
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3168,
+						824,
+						3280,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3280,
+						824,
+						3280,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3280,
+						900,
+						3392,
+						900
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3392,
+						900,
+						3392,
+						1012
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3392,
+						1012,
+						3168,
+						1012
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3168,
+						1012,
+						3168,
+						824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				}
+			],
+			"lights": [
+				{
+					"x": 2739,
+					"y": 1462,
+					"config": {
+						"bright": 224.7,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 2739,
+					"y": 1462,
+					"config": {
+						"bright": 0,
+						"dim": 224.7,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 3113,
+					"y": 1986,
+					"config": {
+						"bright": 9.99,
+						"dim": 19.97,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 4237,
+					"y": 1686,
+					"config": {
+						"bright": 9.99,
+						"dim": 19.97,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 2701,
+					"y": 675,
+					"config": {
+						"bright": 9.99,
+						"dim": 19.97,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1952,
+					"y": 1387,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1540,
+					"y": 975,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 2102,
+					"y": 825,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1278,
+					"y": 788,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1803,
+					"y": 1050,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 4462,
+					"y": 1911,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 3376,
+					"y": 1050,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1615,
+					"y": 1387,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1840,
+					"y": 1611,
+					"config": {
+						"bright": 4.99,
+						"dim": 9.99,
+						"animation": {
+							"type": "torch",
+							"speed": 1,
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Map 5.2: Wavechaser",
+			"source": "ToR",
+			"walls": [
+				{
+					"c": [
+						489,
+						696,
+						489,
+						598
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						489,
+						598,
+						761,
+						598
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						761,
+						598,
+						761,
+						696
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						489,
+						1207,
+						489,
+						1305
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						489,
+						1305,
+						750,
+						1305
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						750,
+						1305,
+						750,
+						1207
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						663,
+						1207,
+						663,
+						1305
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						413,
+						1294,
+						435,
+						1489
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						435,
+						1489,
+						411,
+						1517
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						411,
+						1517,
+						402,
+						1555
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						402,
+						1555,
+						411,
+						1593
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						411,
+						1593,
+						435,
+						1623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						435,
+						1623,
+						470,
+						1640
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						470,
+						1640,
+						508,
+						1640
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						508,
+						1640,
+						543,
+						1623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						543,
+						1623,
+						567,
+						1593
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						567,
+						1593,
+						576,
+						1555
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						837,
+						1555,
+						829,
+						1517
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						829,
+						1517,
+						806,
+						1487
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						674,
+						1555,
+						682,
+						1593
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						682,
+						1593,
+						705,
+						1623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						705,
+						1623,
+						737,
+						1640
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						737,
+						1640,
+						774,
+						1640
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						774,
+						1640,
+						806,
+						1623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						806,
+						1623,
+						829,
+						1593
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						829,
+						1593,
+						837,
+						1555
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						674,
+						1555,
+						576,
+						1555
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						806,
+						1487,
+						826,
+						1294
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						391,
+						598,
+						413,
+						522
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						413,
+						522,
+						445,
+						435
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						445,
+						435,
+						511,
+						337
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						511,
+						337,
+						576,
+						271
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						576,
+						271,
+						609,
+						206
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						641,
+						206,
+						696,
+						293
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						696,
+						293,
+						772,
+						369
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						772,
+						369,
+						826,
+						489
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						826,
+						489,
+						848,
+						609
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						391,
+						598,
+						391,
+						1033
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						413,
+						1294,
+						391,
+						1131
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						826,
+						1294,
+						848,
+						1131
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						848,
+						1044,
+						848,
+						609
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1272,
+						1685,
+						1261,
+						-22
+					]
+				},
+				{
+					"c": [
+						750,
+						1207,
+						663,
+						1207
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0,
+					"door": 1
+				},
+				{
+					"c": [
+						2066,
+						1218,
+						1979,
+						1218
+					]
+				},
+				{
+					"c": [
+						1979,
+						1218,
+						1979,
+						1294
+					]
+				},
+				{
+					"c": [
+						1979,
+						1294,
+						1729,
+						1294
+					]
+				},
+				{
+					"c": [
+						2066,
+						1218,
+						2066,
+						1294
+					]
+				},
+				{
+					"c": [
+						1979,
+						1381,
+						2142,
+						1381
+					]
+				},
+				{
+					"c": [
+						1729,
+						1294,
+						1772,
+						1555
+					]
+				},
+				{
+					"c": [
+						1772,
+						1555,
+						2109,
+						1555
+					]
+				},
+				{
+					"c": [
+						2109,
+						1555,
+						2142,
+						1381
+					]
+				},
+				{
+					"c": [
+						2142,
+						1381,
+						2164,
+						1174
+					]
+				},
+				{
+					"c": [
+						2164,
+						1174,
+						2164,
+						870
+					]
+				},
+				{
+					"c": [
+						2164,
+						870,
+						2164,
+						598
+					]
+				},
+				{
+					"c": [
+						2164,
+						598,
+						2120,
+						435
+					]
+				},
+				{
+					"c": [
+						2120,
+						435,
+						2022,
+						293
+					]
+				},
+				{
+					"c": [
+						2022,
+						293,
+						1935,
+						239
+					]
+				},
+				{
+					"c": [
+						1935,
+						239,
+						1794,
+						358
+					]
+				},
+				{
+					"c": [
+						1794,
+						358,
+						1729,
+						511
+					]
+				},
+				{
+					"c": [
+						1729,
+						511,
+						1718,
+						696
+					]
+				},
+				{
+					"c": [
+						1718,
+						696,
+						1718,
+						1207
+					]
+				},
+				{
+					"c": [
+						1718,
+						1207,
+						1729,
+						1294
+					]
+				},
+				{
+					"c": [
+						1805,
+						609,
+						1805,
+						696
+					]
+				},
+				{
+					"c": [
+						1805,
+						696,
+						1903,
+						696
+					]
+				},
+				{
+					"c": [
+						1903,
+						696,
+						1903,
+						609
+					]
+				},
+				{
+					"c": [
+						1903,
+						609,
+						2066,
+						609
+					]
+				},
+				{
+					"c": [
+						2066,
+						609,
+						2066,
+						696
+					]
+				},
+				{
+					"c": [
+						1957,
+						739,
+						1946,
+						720
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1946,
+						720,
+						1925,
+						720
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1925,
+						720,
+						1914,
+						739
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1914,
+						739,
+						1925,
+						758
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1925,
+						758,
+						1946,
+						758
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1946,
+						758,
+						1957,
+						739
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1957,
+						1169,
+						1949,
+						1154
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1949,
+						1154,
+						1932,
+						1154
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1932,
+						1154,
+						1924,
+						1169
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1924,
+						1169,
+						1932,
+						1183
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1932,
+						1183,
+						1949,
+						1183
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1949,
+						1183,
+						1957,
+						1169
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1979,
+						1381,
+						1979,
+						1294
+					],
+					"door": 1
+				},
+				{
+					"c": [
+						1979,
+						1500,
+						1990,
+						1479
+					]
+				},
+				{
+					"c": [
+						1990,
+						1479,
+						1979,
+						1457
+					]
+				},
+				{
+					"c": [
+						1979,
+						1457,
+						1990,
+						1435
+					]
+				},
+				{
+					"c": [
+						1990,
+						1435,
+						1979,
+						1413
+					]
+				},
+				{
+					"c": [
+						1979,
+						1413,
+						1990,
+						1392
+					]
+				}
+			],
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Tide of Retribution",
+							"Tide of Retribution"
+						],
+						"sort": [
+							0,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 5.3: Ruined Palma Flora",
+			"source": "ToR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Tide of Retribution",
+							"Tide of Retribution"
+						],
+						"sort": [
+							0,
+							2
+						]
+					}
+				}
+			},
+			"lights": [
+				{
+					"x": 2416,
+					"y": 1535,
+					"config": {
+						"bright": 199.24,
+						"dim": 0,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 2416,
+					"y": 1535,
+					"config": {
+						"bright": 0,
+						"dim": 199.24,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "Map 5.3: Ruined Palma Flora (Player Version)",
+			"source": "ToR",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Tide of Retribution",
+							"Tide of Retribution"
+						],
+						"sort": [
+							0,
+							2.5
+						]
+					}
+				}
+			},
+			"lights": [
+				{
+					"x": 2416,
+					"y": 1535,
+					"config": {
+						"bright": 199.24,
+						"dim": 0,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 2416,
+					"y": 1535,
+					"config": {
+						"bright": 0,
+						"dim": 199.24,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				}
+			]
+		}
+	]
+}

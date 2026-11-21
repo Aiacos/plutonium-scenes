@@ -1,0 +1,202 @@
+{
+	"map": [
+		{
+			"name": "Continent of Wildemount",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Welcome to Wildemount"
+						],
+						"sort": [
+							1,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.1: Menagerie Coast",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.10: Blightshore",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							10
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.2: Port Damali",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.3: Marrow Valley",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							3
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.4: Zemni Fields",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							4
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.5: Rexxentrum",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.6: Greying Wildlands",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							6
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.7: Eiselcross",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							7
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.8: Wastes of Xorhas",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							8
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 3.9: Rosohna",
+			"source": "EGW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Explorer's Guide to Wildemount",
+							"Chapter 3: Wildemount Gazetteer"
+						],
+						"sort": [
+							4,
+							9
+						]
+					}
+				}
+			}
+		}
+	]
+}
