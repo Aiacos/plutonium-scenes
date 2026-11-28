@@ -1,0 +1,10186 @@
+{
+	"map": [
+		{
+			"name": "Map 5.11: Brokenveil Marsh",
+			"source": "US",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Unwelcome Spirits",
+							"Unwelcome Spirits"
+						],
+						"sort": [
+							0,
+							0
+						]
+					}
+				}
+			},
+			"walls": [
+				{
+					"c": [
+						4,
+						1160,
+						66,
+						1117
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						66,
+						1117,
+						54,
+						990
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						54,
+						990,
+						90,
+						962
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						90,
+						962,
+						90,
+						948
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						90,
+						948,
+						176,
+						934
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						176,
+						934,
+						188,
+						793
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						188,
+						793,
+						249,
+						680
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						249,
+						680,
+						224,
+						595
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						224,
+						595,
+						200,
+						496
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						200,
+						496,
+						176,
+						482
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						176,
+						482,
+						138,
+						439
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						138,
+						439,
+						102,
+						313
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						102,
+						313,
+						224,
+						326
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						224,
+						326,
+						285,
+						326
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						285,
+						326,
+						383,
+						326
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						383,
+						326,
+						371,
+						213
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						371,
+						213,
+						285,
+						115
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						285,
+						115,
+						261,
+						58
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						261,
+						58,
+						359,
+						-13
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				}
+			]
+		},
+		{
+			"name": "Map 5.11: Brokenveil Marsh (Player Version)",
+			"source": "US",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Unwelcome Spirits",
+							"Unwelcome Spirits"
+						],
+						"sort": [
+							0,
+							0.5
+						]
+					}
+				}
+			},
+			"walls": [
+				{
+					"c": [
+						3,
+						1157,
+						65,
+						1114
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						65,
+						1114,
+						53,
+						987
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						53,
+						987,
+						89,
+						959
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						89,
+						959,
+						89,
+						945
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						89,
+						945,
+						175,
+						931
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						175,
+						931,
+						187,
+						790
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						187,
+						790,
+						248,
+						677
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						248,
+						677,
+						223,
+						592
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						223,
+						592,
+						199,
+						493
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						199,
+						493,
+						175,
+						479
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						175,
+						479,
+						137,
+						436
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						137,
+						436,
+						101,
+						310
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						101,
+						310,
+						223,
+						323
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						223,
+						323,
+						284,
+						323
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						284,
+						323,
+						382,
+						323
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						382,
+						323,
+						370,
+						210
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						370,
+						210,
+						284,
+						112
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						284,
+						112,
+						260,
+						55
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						260,
+						55,
+						358,
+						-16
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				}
+			]
+		},
+		{
+			"name": "Map 5.12: Fort Venture",
+			"source": "US",
+			"walls": [
+				{
+					"c": [
+						1696,
+						304,
+						1696,
+						406
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1479,
+						406,
+						1479,
+						333
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1479,
+						406,
+						1566,
+						406
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1624,
+						406,
+						1696,
+						406
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						812,
+						1160,
+						812,
+						1102
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						812,
+						1102,
+						725,
+						1102
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						696,
+						1276,
+						812,
+						1276
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						812,
+						1276,
+						812,
+						1218
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						812,
+						2030,
+						812,
+						1972
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						812,
+						2088,
+						812,
+						2146
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						812,
+						2146,
+						725,
+						2146
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						696,
+						1972,
+						812,
+						1972
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1566,
+						2842,
+						1508,
+						2842
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1508,
+						2842,
+						1508,
+						2929
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1682,
+						2943,
+						1682,
+						2842
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1682,
+						2842,
+						1624,
+						2842
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1392,
+						2262,
+						1450,
+						2262
+					]
+				},
+				{
+					"c": [
+						1450,
+						2262,
+						1450,
+						2320
+					],
+					"door": 1,
+					"ds": 1
+				},
+				{
+					"c": [
+						1450,
+						2320,
+						1392,
+						2320
+					]
+				},
+				{
+					"c": [
+						1392,
+						2320,
+						1392,
+						2262
+					]
+				},
+				{
+					"c": [
+						1392,
+						2378,
+						1450,
+						2378
+					]
+				},
+				{
+					"c": [
+						1450,
+						2378,
+						1450,
+						2436
+					],
+					"door": 1,
+					"ds": 1
+				},
+				{
+					"c": [
+						1450,
+						2436,
+						1392,
+						2436
+					]
+				},
+				{
+					"c": [
+						1392,
+						2436,
+						1392,
+						2378
+					]
+				},
+				{
+					"c": [
+						1392,
+						2494,
+						1450,
+						2494
+					]
+				},
+				{
+					"c": [
+						1450,
+						2494,
+						1450,
+						2552
+					],
+					"door": 1,
+					"ds": 1
+				},
+				{
+					"c": [
+						1450,
+						2552,
+						1392,
+						2552
+					]
+				},
+				{
+					"c": [
+						1392,
+						2552,
+						1392,
+						2494
+					]
+				},
+				{
+					"c": [
+						3654,
+						2842,
+						3712,
+						2842
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3712,
+						2842,
+						3712,
+						2929
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3538,
+						2943,
+						3538,
+						2842
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3538,
+						2842,
+						3596,
+						2842
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4422,
+						1798,
+						4422,
+						1740
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4422,
+						1740,
+						4524,
+						1740
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4509,
+						1914,
+						4422,
+						1914
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4422,
+						1914,
+						4422,
+						1856
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4422,
+						1392,
+						4422,
+						1334
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4422,
+						1334,
+						4509,
+						1334
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4524,
+						1508,
+						4422,
+						1508
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4422,
+						1508,
+						4422,
+						1450
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4524,
+						1508,
+						4524,
+						1624
+					],
+					"door": 1,
+					"ds": 2
+				},
+				{
+					"c": [
+						4524,
+						1624,
+						4524,
+						1740
+					],
+					"door": 1,
+					"ds": 2
+				},
+				{
+					"c": [
+						3654,
+						406,
+						3712,
+						406
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3712,
+						406,
+						3712,
+						319
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3538,
+						304,
+						3538,
+						406
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3538,
+						406,
+						3596,
+						406
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3190,
+						522,
+						3306,
+						522
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3306,
+						522,
+						3306,
+						638
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3306,
+						638,
+						3190,
+						638
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3190,
+						638,
+						3190,
+						522
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3364,
+						522,
+						3480,
+						522
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3480,
+						522,
+						3480,
+						638
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3480,
+						638,
+						3364,
+						638
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3364,
+						638,
+						3364,
+						522
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3364,
+						696,
+						3480,
+						696
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3480,
+						696,
+						3480,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3480,
+						812,
+						3364,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3364,
+						812,
+						3364,
+						696
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3306,
+						696,
+						3190,
+						696
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3190,
+						696,
+						3190,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3190,
+						812,
+						3306,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3306,
+						812,
+						3306,
+						696
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3596,
+						812,
+						3654,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3654,
+						812,
+						3654,
+						870
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3654,
+						870,
+						3596,
+						870
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3596,
+						870,
+						3596,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3596,
+						928,
+						3654,
+						928
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3654,
+						928,
+						3654,
+						986
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3654,
+						986,
+						3596,
+						986
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3596,
+						986,
+						3596,
+						928
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3712,
+						928,
+						3712,
+						986
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3712,
+						986,
+						3770,
+						986
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3770,
+						986,
+						3770,
+						928
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3770,
+						928,
+						3712,
+						928
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3712,
+						870,
+						3770,
+						870
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3770,
+						870,
+						3770,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3770,
+						812,
+						3712,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3712,
+						812,
+						3712,
+						870
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3828,
+						812,
+						3886,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3886,
+						812,
+						3886,
+						870
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3886,
+						870,
+						3828,
+						870
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3828,
+						870,
+						3828,
+						812
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3828,
+						928,
+						3886,
+						928
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3886,
+						928,
+						3886,
+						986
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3886,
+						986,
+						3828,
+						986
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3828,
+						986,
+						3828,
+						928
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2842,
+						580,
+						2842,
+						754
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2842,
+						754,
+						2900,
+						754
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2958,
+						754,
+						3016,
+						754
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3016,
+						754,
+						3016,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3016,
+						580,
+						2842,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2958,
+						754,
+						2900,
+						754
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10,
+					"door": 1
+				},
+				{
+					"c": [
+						2378,
+						986,
+						2320,
+						1044
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2320,
+						1044,
+						2146,
+						812
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2146,
+						812,
+						2508,
+						522
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2508,
+						522,
+						2682,
+						754
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2682,
+						754,
+						2624,
+						797
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2624,
+						797,
+						2581,
+						739
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2581,
+						739,
+						2334,
+						928
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10,
+					"door": 1
+				},
+				{
+					"c": [
+						2334,
+						928,
+						2378,
+						986
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1479,
+						333,
+						725,
+						1102
+					]
+				},
+				{
+					"c": [
+						3538,
+						304,
+						1696,
+						304
+					]
+				},
+				{
+					"c": [
+						4509,
+						1334,
+						3712,
+						319
+					]
+				},
+				{
+					"c": [
+						4509,
+						1914,
+						3712,
+						2929
+					]
+				},
+				{
+					"c": [
+						3538,
+						2943,
+						1682,
+						2943
+					]
+				},
+				{
+					"c": [
+						725,
+						2146,
+						1508,
+						2929
+					]
+				},
+				{
+					"c": [
+						696,
+						1972,
+						696,
+						1276
+					]
+				},
+				{
+					"c": [
+						1392,
+						1319,
+						1087,
+						1319
+					]
+				},
+				{
+					"c": [
+						1087,
+						1319,
+						1087,
+						1624
+					]
+				},
+				{
+					"c": [
+						1087,
+						1624,
+						1392,
+						1624
+					]
+				},
+				{
+					"c": [
+						1392,
+						1450,
+						1392,
+						1160
+					]
+				},
+				{
+					"c": [
+						1392,
+						1160,
+						2320,
+						1160
+					]
+				},
+				{
+					"c": [
+						2320,
+						1160,
+						2320,
+						1566
+					]
+				},
+				{
+					"c": [
+						2320,
+						1682,
+						2320,
+						2088
+					]
+				},
+				{
+					"c": [
+						2320,
+						2088,
+						1392,
+						2088
+					]
+				},
+				{
+					"c": [
+						1392,
+						2088,
+						1392,
+						1508
+					]
+				},
+				{
+					"c": [
+						1392,
+						1450,
+						1392,
+						1508
+					],
+					"door": 1
+				},
+				{
+					"c": [
+						2320,
+						1566,
+						2320,
+						1624
+					],
+					"door": 1
+				},
+				{
+					"c": [
+						2320,
+						1624,
+						2320,
+						1682
+					],
+					"door": 1
+				},
+				{
+					"c": [
+						1508,
+						2929,
+						1508,
+						3016
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						1508,
+						3016,
+						1682,
+						3016
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						1682,
+						3016,
+						1682,
+						2943
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						3712,
+						2929,
+						3712,
+						3016
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						3712,
+						3016,
+						3538,
+						3016
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						3538,
+						3016,
+						3538,
+						2943
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						4509,
+						1914,
+						4611,
+						1914
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						4611,
+						1914,
+						4611,
+						1740
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						4611,
+						1740,
+						4524,
+						1740
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						4524,
+						1508,
+						4611,
+						1508
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						4611,
+						1508,
+						4611,
+						1334
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						4611,
+						1334,
+						4509,
+						1334
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						3538,
+						304,
+						3538,
+						232
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						3538,
+						232,
+						3712,
+						232
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						3712,
+						232,
+						3712,
+						319
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						1696,
+						304,
+						1696,
+						217
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						1696,
+						217,
+						1479,
+						217
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						1479,
+						217,
+						1479,
+						333
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						696,
+						1276,
+						638,
+						1276
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						638,
+						1276,
+						638,
+						1102
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						638,
+						1102,
+						725,
+						1102
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						696,
+						1972,
+						638,
+						1972
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						638,
+						1972,
+						638,
+						2146
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						638,
+						2146,
+						725,
+						2146
+					],
+					"light": 30,
+					"sight": 30,
+					"threshold": {
+						"light": 10,
+						"sight": 10,
+						"attenuation": true
+					}
+				},
+				{
+					"c": [
+						2320,
+						2479,
+						2320,
+						2262
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2320,
+						2262,
+						1972,
+						2262
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1972,
+						2262,
+						1972,
+						2740
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1972,
+						2740,
+						2320,
+						2740
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2320,
+						2740,
+						2320,
+						2523
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2320,
+						2523,
+						2276,
+						2523
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2276,
+						2523,
+						2276,
+						2479
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10,
+					"door": 1
+				},
+				{
+					"c": [
+						2276,
+						2479,
+						2320,
+						2479
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				}
+			],
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Unwelcome Spirits",
+							"Unwelcome Spirits"
+						],
+						"sort": [
+							0,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map 5.12: Fort Venture (Player Version)",
+			"source": "US",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Wildemount: Unwelcome Spirits",
+							"Unwelcome Spirits"
+						],
+						"sort": [
+							0,
+							1.5
+						]
+					},
+					"tokens": [
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 4483,
+							"y": 1392,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 4483,
+							"y": 1801,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3606,
+							"y": 281,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 1559,
+							"y": 281,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 682,
+							"y": 1158,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 682,
+							"y": 2035,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 1559,
+							"y": 2912,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3606,
+							"y": 2912,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 2904,
+							"y": 1509,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3606,
+							"y": 2035,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3430,
+							"y": 1509,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3079,
+							"y": 1509,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3781,
+							"y": 1509,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3430,
+							"y": 2035,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3079,
+							"y": 2035,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3781,
+							"y": 2035,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Mastiff",
+							"ddbName": "Mastiff",
+							"ddbId": 16953,
+							"creatures": {
+								"2014": {
+									"name": "Mastiff",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Mastiff",
+									"source": "XMM"
+								}
+							},
+							"x": 3840,
+							"y": 924,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Mastiff",
+							"ddbName": "Mastiff",
+							"ddbId": 16953,
+							"creatures": {
+								"2014": {
+									"name": "Mastiff",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Mastiff",
+									"source": "XMM"
+								}
+							},
+							"x": 3606,
+							"y": 807,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Mastiff",
+							"ddbName": "Mastiff",
+							"ddbId": 16953,
+							"creatures": {
+								"2014": {
+									"name": "Mastiff",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Mastiff",
+									"source": "XMM"
+								}
+							},
+							"x": 3606,
+							"y": 924,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Mastiff",
+							"ddbName": "Mastiff",
+							"ddbId": 16953,
+							"creatures": {
+								"2014": {
+									"name": "Mastiff",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Mastiff",
+									"source": "XMM"
+								}
+							},
+							"x": 3723,
+							"y": 807,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3079,
+							"y": 690,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3079,
+							"y": 573,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Alonne Frith",
+							"ddbName": "Cultist",
+							"ddbId": 16835,
+							"creatures": {
+								"2014": {
+									"name": "Cultist",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Cultist",
+									"source": "XMM"
+								}
+							},
+							"x": 3196,
+							"y": 515,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Veteran",
+							"ddbName": "Veteran",
+							"ddbId": 17045,
+							"creatures": {
+								"2014": {
+									"name": "Veteran",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Warrior Veteran",
+									"source": "XMM"
+								}
+							},
+							"x": 2436,
+							"y": 866,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 2904,
+							"y": 2444,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3255,
+							"y": 2678,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 2787,
+							"y": 2269,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3255,
+							"y": 2269,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3021,
+							"y": 2328,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 3489,
+							"y": 2269,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 2904,
+							"y": 2678,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 2787,
+							"y": 2444,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Commander Struther Felmont",
+							"ddbName": "Veteran",
+							"ddbId": 17045,
+							"creatures": {
+								"2014": {
+									"name": "Veteran",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Warrior Veteran",
+									"source": "XMM"
+								}
+							},
+							"x": 2085,
+							"y": 2386,
+							"width": 1,
+							"height": 1,
+							"disposition": -1,
+							"hidden": true
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 1384,
+							"y": 2386,
+							"width": 1,
+							"height": 1,
+							"disposition": -1,
+							"hidden": true
+						},
+						{
+							"name": "Parson Pellinost",
+							"ddbName": "Parson Pellinost",
+							"ddbId": 744329,
+							"creatures": {
+								"2014": {
+									"name": "Parson Pellinost",
+									"source": "EGW"
+								},
+								"2024": {
+									"name": "Parson Pellinost",
+									"source": "EGW"
+								}
+							},
+							"x": 1150,
+							"y": 1509,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Bol'bara",
+							"ddbName": "Bol'bara",
+							"ddbId": 744303,
+							"creatures": {
+								"2014": {
+									"name": "Bol'bara",
+									"source": "EGW"
+								},
+								"2024": {
+									"name": "Bol'bara",
+									"source": "EGW"
+								}
+							},
+							"x": 1208,
+							"y": 1450,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 1267,
+							"y": 1333,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 1384,
+							"y": 1392,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						},
+						{
+							"name": "Guard",
+							"ddbName": "Guard",
+							"ddbId": 16915,
+							"creatures": {
+								"2014": {
+									"name": "Guard",
+									"source": "MM"
+								},
+								"2024": {
+									"name": "Guard",
+									"source": "WttHC"
+								}
+							},
+							"x": 1384,
+							"y": 1509,
+							"width": 1,
+							"height": 1,
+							"disposition": -1
+						}
+					],
+					"ddbScene": "egtw-10133-985-Map512FortVenture-player-scene.json"
+				}
+			},
+			"lights": [
+				{
+					"x": 4015,
+					"y": 2620,
+					"config": {
+						"bright": 151.24,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 4015,
+					"y": 2620,
+					"config": {
+						"bright": 0,
+						"dim": 151.24,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 3956,
+					"y": 514,
+					"config": {
+						"bright": 151.24,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 3956,
+					"y": 514,
+					"config": {
+						"bright": 0,
+						"dim": 151.24,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 1822,
+					"y": -12,
+					"config": {
+						"bright": 100.83,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 1822,
+					"y": -12,
+					"config": {
+						"bright": 0,
+						"dim": 100.83,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 155,
+					"y": 339,
+					"config": {
+						"bright": 0,
+						"dim": 100.83,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 711,
+					"y": 222,
+					"config": {
+						"bright": 100.83,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": -79,
+					"y": 1655,
+					"config": {
+						"bright": 0,
+						"dim": 100.83,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": -79,
+					"y": 1655,
+					"config": {
+						"bright": 100.83,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 301,
+					"y": 2532,
+					"config": {
+						"bright": 0,
+						"dim": 100.83,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 301,
+					"y": 2532,
+					"config": {
+						"bright": 100.83,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 1793,
+					"y": 3292,
+					"config": {
+						"bright": 0,
+						"dim": 100.83,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 1793,
+					"y": 3292,
+					"config": {
+						"bright": 100.83,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					},
+					"walls": false
+				},
+				{
+					"x": 2465,
+					"y": 1626,
+					"config": {
+						"bright": 30.21,
+						"dim": 60.42,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 2465,
+					"y": 1626,
+					"config": {
+						"bright": 0,
+						"dim": 30.25,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				},
+				{
+					"x": 2348,
+					"y": 2152,
+					"config": {
+						"bright": 0,
+						"dim": 50.41,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				},
+				{
+					"x": 2348,
+					"y": 2152,
+					"config": {
+						"bright": 50.41,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 1370,
+					"y": 2125,
+					"config": {
+						"bright": 0,
+						"dim": 50.41,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				},
+				{
+					"x": 1370,
+					"y": 2125,
+					"config": {
+						"bright": 50.41,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 1032,
+					"y": 1684,
+					"config": {
+						"bright": 0,
+						"dim": 50.41,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				},
+				{
+					"x": 1032,
+					"y": 1684,
+					"config": {
+						"bright": 50.41,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 1325,
+					"y": 1099,
+					"config": {
+						"bright": 0,
+						"dim": 50.41,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				},
+				{
+					"x": 1325,
+					"y": 1099,
+					"config": {
+						"bright": 50.41,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 2319,
+					"y": 1099,
+					"config": {
+						"bright": 0,
+						"dim": 50.41,
+						"attenuation": 0.3,
+						"darkness": {
+							"min": 0.5,
+							"max": 0.7
+						}
+					}
+				},
+				{
+					"x": 2319,
+					"y": 1099,
+					"config": {
+						"bright": 50.41,
+						"dim": 0,
+						"attenuation": 0.3,
+						"darkness": {
+							"max": 0.5
+						}
+					}
+				},
+				{
+					"x": 2787,
+					"y": 1275,
+					"config": {
+						"bright": 20.17,
+						"dim": 40.33,
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 2787,
+					"y": 1976,
+					"config": {
+						"bright": 20.17,
+						"dim": 40.33,
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 3956,
+					"y": 1976,
+					"config": {
+						"bright": 20.17,
+						"dim": 40.33,
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 3956,
+					"y": 1275,
+					"config": {
+						"bright": 20.17,
+						"dim": 40.33,
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 2787,
+					"y": 1275,
+					"config": {
+						"bright": 1.31,
+						"dim": 0,
+						"alpha": 1,
+						"color": "#ff9500",
+						"luminosity": 0.05,
+						"animation": {
+							"type": "dome",
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 2787,
+					"y": 1976,
+					"config": {
+						"bright": 1.31,
+						"dim": 0,
+						"alpha": 1,
+						"color": "#ff9500",
+						"luminosity": 0.05,
+						"animation": {
+							"type": "dome",
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 3956,
+					"y": 1976,
+					"config": {
+						"bright": 1.31,
+						"dim": 0,
+						"alpha": 1,
+						"color": "#ff9500",
+						"luminosity": 0.05,
+						"animation": {
+							"type": "dome",
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 3956,
+					"y": 1275,
+					"config": {
+						"bright": 1.31,
+						"dim": 0,
+						"alpha": 1,
+						"color": "#ff9500",
+						"luminosity": 0.05,
+						"animation": {
+							"type": "dome",
+							"intensity": 1
+						},
+						"darkness": {
+							"min": 0.6
+						}
+					}
+				},
+				{
+					"x": 1851,
+					"y": 1626,
+					"config": {
+						"bright": 15.12,
+						"dim": 30.25
+					}
+				},
+				{
+					"x": 1851,
+					"y": 1859,
+					"config": {
+						"bright": 15.12,
+						"dim": 30.25
+					}
+				},
+				{
+					"x": 1851,
+					"y": 1392,
+					"config": {
+						"bright": 15.12,
+						"dim": 30.25
+					}
+				},
+				{
+					"x": 1237,
+					"y": 1479,
+					"config": {
+						"bright": 10.08,
+						"dim": 20.17
+					}
+				}
+			],
+			"walls": [
+				{
+					"c": [
+						499,
+						997,
+						586,
+						902
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						623,
+						872,
+						703,
+						785
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						835,
+						653,
+						747,
+						741
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						959,
+						536,
+						872,
+						624
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1076,
+						412,
+						989,
+						500
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1120,
+						375,
+						1200,
+						281
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1230,
+						251,
+						1317,
+						164
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1449,
+						193,
+						1361,
+						281
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1325,
+						331,
+						1237,
+						419
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1208,
+						448,
+						1120,
+						536
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1091,
+						565,
+						1003,
+						661
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						952,
+						697,
+						864,
+						785
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						842,
+						821,
+						755,
+						909
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						725,
+						938,
+						638,
+						1026
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						221,
+						17,
+						199,
+						368
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						199,
+						368,
+						272,
+						675
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						272,
+						675,
+						228,
+						814
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						228,
+						814,
+						265,
+						1179
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						265,
+						1179,
+						250,
+						1326
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						250,
+						1326,
+						287,
+						1509
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						287,
+						1509,
+						250,
+						1713
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						250,
+						1713,
+						279,
+						1874
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						279,
+						1874,
+						272,
+						2086
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						272,
+						2086,
+						308,
+						2313
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						308,
+						2313,
+						258,
+						2459
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						258,
+						2459,
+						287,
+						2656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						287,
+						2656,
+						265,
+						2737
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						265,
+						2737,
+						279,
+						2854
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						279,
+						2854,
+						235,
+						3000
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						235,
+						3000,
+						272,
+						3073
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						352,
+						3044,
+						448,
+						2978
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						448,
+						2978,
+						521,
+						2985
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						521,
+						2985,
+						572,
+						3021
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						572,
+						3021,
+						528,
+						3080
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						528,
+						3080,
+						367,
+						3073
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						367,
+						3073,
+						352,
+						3044
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						506,
+						2854,
+						425,
+						2897
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						448,
+						2846,
+						462,
+						2890
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						462,
+						2802,
+						528,
+						2802
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						506,
+						2773,
+						499,
+						2824
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						682,
+						3073,
+						696,
+						3036
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						696,
+						3036,
+						682,
+						3000
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						682,
+						3000,
+						652,
+						3007
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						652,
+						3007,
+						638,
+						2978
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						638,
+						2978,
+						645,
+						2927
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						645,
+						2927,
+						689,
+						2890
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						689,
+						2890,
+						718,
+						2875
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						718,
+						2875,
+						762,
+						2890
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						762,
+						2890,
+						820,
+						2890
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						820,
+						2890,
+						849,
+						2948
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						849,
+						2948,
+						872,
+						2963
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						872,
+						2963,
+						879,
+						2985
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						879,
+						2985,
+						806,
+						3044
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						806,
+						3044,
+						806,
+						3073
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						806,
+						3073,
+						682,
+						3073
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						682,
+						3073,
+						528,
+						3080
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						367,
+						3073,
+						272,
+						3073
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						521,
+						2744,
+						469,
+						2758
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						469,
+						2758,
+						455,
+						2788
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						455,
+						2788,
+						418,
+						2795
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						418,
+						2795,
+						396,
+						2810
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						396,
+						2810,
+						367,
+						2810
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						367,
+						2810,
+						367,
+						2773
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						367,
+						2773,
+						352,
+						2729
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						352,
+						2729,
+						360,
+						2685
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						360,
+						2685,
+						389,
+						2664
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						389,
+						2664,
+						433,
+						2664
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						433,
+						2664,
+						469,
+						2678
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						469,
+						2678,
+						484,
+						2671
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						484,
+						2671,
+						528,
+						2714
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						528,
+						2714,
+						521,
+						2744
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						521,
+						2488,
+						469,
+						2466
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						469,
+						2466,
+						448,
+						2473
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						448,
+						2473,
+						418,
+						2547
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						418,
+						2547,
+						448,
+						2554
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						448,
+						2554,
+						469,
+						2547
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						469,
+						2547,
+						477,
+						2510
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						477,
+						2510,
+						499,
+						2503
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						499,
+						2503,
+						521,
+						2488
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						586,
+						2583,
+						557,
+						2627
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						557,
+						2627,
+						565,
+						2649
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						565,
+						2649,
+						565,
+						2693
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						565,
+						2693,
+						601,
+						2707
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						601,
+						2707,
+						638,
+						2678
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						638,
+						2678,
+						682,
+						2678
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						682,
+						2678,
+						696,
+						2649
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						696,
+						2649,
+						682,
+						2641
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						682,
+						2641,
+						645,
+						2576
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						645,
+						2576,
+						623,
+						2576
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						623,
+						2576,
+						586,
+						2583
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						908,
+						2605,
+						908,
+						2634
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						908,
+						2634,
+						923,
+						2656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						923,
+						2656,
+						945,
+						2656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						945,
+						2656,
+						959,
+						2641
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						959,
+						2641,
+						945,
+						2634
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						945,
+						2634,
+						945,
+						2620
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						945,
+						2620,
+						930,
+						2605
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						930,
+						2605,
+						908,
+						2605
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						835,
+						2678,
+						791,
+						2700
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						806,
+						2678,
+						820,
+						2700
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						433,
+						2247,
+						521,
+						2334
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						586,
+						2247,
+						682,
+						2334
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						565,
+						2378,
+						652,
+						2466
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						725,
+						2371,
+						813,
+						2459
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						689,
+						2488,
+						776,
+						2576
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						849,
+						2481,
+						937,
+						2568
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						966,
+						2597,
+						1054,
+						2685
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						813,
+						2620,
+						901,
+						2700
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						937,
+						2737,
+						1032,
+						2824
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1098,
+						2737,
+						1186,
+						2824
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1223,
+						2846,
+						1310,
+						2934
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1346,
+						2963,
+						1420,
+						3036
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1186,
+						2985,
+						1273,
+						3058
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1054,
+						2854,
+						1149,
+						2941
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						455,
+						2071,
+						448,
+						1954
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						565,
+						1837,
+						565,
+						1962
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						440,
+						1764,
+						448,
+						1889
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						557,
+						2123,
+						455,
+						2152
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						484,
+						2108,
+						499,
+						2181
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						747,
+						1859,
+						820,
+						1852
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						784,
+						1816,
+						806,
+						1874
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						638,
+						1523,
+						638,
+						1582
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						667,
+						1552,
+						608,
+						1552
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						433,
+						1421,
+						440,
+						1545
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						440,
+						1603,
+						448,
+						1728
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						565,
+						1772,
+						557,
+						1647
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						565,
+						1611,
+						557,
+						1486
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						557,
+						1442,
+						557,
+						1319
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						433,
+						1377,
+						425,
+						1245
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						776,
+						1421,
+						857,
+						1399
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						806,
+						1369,
+						820,
+						1435
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						506,
+						1150,
+						579,
+						1077
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						528,
+						1077,
+						565,
+						1135
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						389,
+						1150,
+						477,
+						1106
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						411,
+						1092,
+						433,
+						1150
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						375,
+						851,
+						389,
+						858
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						389,
+						858,
+						382,
+						895
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						382,
+						895,
+						389,
+						909
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						389,
+						909,
+						425,
+						924
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						425,
+						924,
+						455,
+						902
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						455,
+						902,
+						477,
+						895
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						477,
+						895,
+						506,
+						865
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						506,
+						865,
+						528,
+						858
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						528,
+						858,
+						521,
+						843
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						521,
+						843,
+						499,
+						843
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						499,
+						843,
+						477,
+						821
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						477,
+						821,
+						462,
+						814
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						462,
+						814,
+						433,
+						807
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						433,
+						807,
+						404,
+						814
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						404,
+						814,
+						382,
+						821
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						382,
+						821,
+						375,
+						836
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						375,
+						836,
+						375,
+						851
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						484,
+						580,
+						521,
+						595
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						521,
+						595,
+						565,
+						573
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						565,
+						573,
+						608,
+						544
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						608,
+						544,
+						623,
+						500
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						623,
+						500,
+						645,
+						492
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						645,
+						492,
+						594,
+						456
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						594,
+						456,
+						565,
+						448
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						565,
+						448,
+						550,
+						463
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						550,
+						463,
+						521,
+						456
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						521,
+						456,
+						499,
+						471
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						499,
+						471,
+						477,
+						500
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						477,
+						500,
+						506,
+						536
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						506,
+						536,
+						499,
+						565
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						499,
+						565,
+						484,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						345,
+						281,
+						389,
+						331
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						352,
+						331,
+						396,
+						288
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						630,
+						361,
+						652,
+						354
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						652,
+						354,
+						674,
+						375
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						674,
+						375,
+						718,
+						346
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						718,
+						346,
+						732,
+						317
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						732,
+						317,
+						703,
+						302
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						703,
+						302,
+						652,
+						317
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						652,
+						317,
+						630,
+						361
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						433,
+						273,
+						477,
+						266
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						477,
+						266,
+						506,
+						244
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						506,
+						244,
+						542,
+						237
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						542,
+						237,
+						557,
+						200
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						557,
+						200,
+						601,
+						193
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						601,
+						193,
+						601,
+						164
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						601,
+						164,
+						542,
+						134
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						542,
+						134,
+						528,
+						141
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						528,
+						141,
+						492,
+						120
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						492,
+						120,
+						411,
+						149
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						411,
+						149,
+						396,
+						164
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						396,
+						164,
+						389,
+						185
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						389,
+						185,
+						404,
+						193
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						404,
+						193,
+						389,
+						229
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						389,
+						229,
+						389,
+						244
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						389,
+						244,
+						418,
+						258
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						418,
+						258,
+						433,
+						273
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						820,
+						90,
+						849,
+						120
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						849,
+						120,
+						828,
+						156
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						828,
+						156,
+						835,
+						185
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						835,
+						185,
+						879,
+						200
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						879,
+						200,
+						915,
+						222
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						915,
+						222,
+						966,
+						185
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						966,
+						185,
+						1003,
+						185
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1003,
+						185,
+						1032,
+						141
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1032,
+						141,
+						996,
+						105
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						996,
+						105,
+						1010,
+						76
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						820,
+						90,
+						828,
+						54
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						886,
+						463,
+						989,
+						427
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						930,
+						412,
+						945,
+						478
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						974,
+						588,
+						1039,
+						544
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						996,
+						529,
+						996,
+						595
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						989,
+						697,
+						1003,
+						734
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						981,
+						726,
+						1010,
+						712
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1413,
+						558,
+						1500,
+						544
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1449,
+						529,
+						1456,
+						588
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1610,
+						602,
+						1668,
+						646
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1668,
+						646,
+						1690,
+						646
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1690,
+						646,
+						1727,
+						595
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1727,
+						595,
+						1800,
+						558
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1800,
+						558,
+						1763,
+						544
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1763,
+						544,
+						1749,
+						521
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1749,
+						521,
+						1683,
+						529
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1683,
+						529,
+						1654,
+						544
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1654,
+						544,
+						1639,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1639,
+						580,
+						1610,
+						602
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1230,
+						1019,
+						1266,
+						1026
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1266,
+						1026,
+						1288,
+						997
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1288,
+						997,
+						1325,
+						960
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1325,
+						960,
+						1310,
+						931
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1310,
+						931,
+						1281,
+						924
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1281,
+						924,
+						1259,
+						916
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1259,
+						916,
+						1223,
+						945
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1223,
+						945,
+						1208,
+						975
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1208,
+						975,
+						1230,
+						982
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1230,
+						982,
+						1230,
+						1019
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						923,
+						1012,
+						966,
+						1012
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						966,
+						1012,
+						1003,
+						997
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1003,
+						997,
+						966,
+						968
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						966,
+						968,
+						945,
+						989
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						945,
+						989,
+						923,
+						1012
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1478,
+						317,
+						718,
+						1085
+					]
+				},
+				{
+					"c": [
+						1559,
+						412,
+						1486,
+						412
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1486,
+						412,
+						1478,
+						317
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1478,
+						317,
+						1486,
+						207
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1486,
+						207,
+						1697,
+						207
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1697,
+						207,
+						1697,
+						302
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1697,
+						302,
+						1697,
+						412
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1697,
+						412,
+						1617,
+						412
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1697,
+						302,
+						3532,
+						295
+					]
+				},
+				{
+					"c": [
+						3532,
+						295,
+						3532,
+						207
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3532,
+						207,
+						3752,
+						207
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3752,
+						207,
+						3752,
+						346
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3752,
+						346,
+						3744,
+						412
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3744,
+						412,
+						3671,
+						412
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3606,
+						412,
+						3539,
+						412
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3539,
+						412,
+						3532,
+						295
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3752,
+						346,
+						3773,
+						361
+					]
+				},
+				{
+					"c": [
+						3773,
+						361,
+						4512,
+						1311
+					]
+				},
+				{
+					"c": [
+						4512,
+						1311,
+						4417,
+						1311
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4402,
+						1392,
+						4417,
+						1311
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4512,
+						1311,
+						4614,
+						1319
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4614,
+						1319,
+						4621,
+						1530
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4621,
+						1530,
+						4519,
+						1530
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4417,
+						1530,
+						4402,
+						1450
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4519,
+						1530,
+						4417,
+						1530
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4402,
+						1728,
+						4519,
+						1720
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4519,
+						1720,
+						4621,
+						1728
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4621,
+						1728,
+						4621,
+						1933
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4621,
+						1933,
+						4527,
+						1940
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4527,
+						1940,
+						4490,
+						1962
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4490,
+						1962,
+						4475,
+						1940
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4475,
+						1940,
+						4410,
+						1947
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4410,
+						1947,
+						4410,
+						1874
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4402,
+						1793,
+						4402,
+						1728
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4490,
+						1962,
+						3773,
+						2897
+					]
+				},
+				{
+					"c": [
+						3773,
+						2897,
+						3737,
+						2912
+					]
+				},
+				{
+					"c": [
+						3737,
+						2912,
+						3737,
+						3044
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3737,
+						3044,
+						3532,
+						3044
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3532,
+						3044,
+						3525,
+						2971
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3525,
+						2971,
+						3496,
+						2956
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3496,
+						2956,
+						1727,
+						2963
+					]
+				},
+				{
+					"c": [
+						1727,
+						2963,
+						1705,
+						2978
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1705,
+						2978,
+						1697,
+						3029
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1697,
+						3029,
+						1478,
+						3029
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1478,
+						3029,
+						1478,
+						2971
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1478,
+						2971,
+						1486,
+						2927
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1486,
+						2927,
+						1471,
+						2934
+					]
+				},
+				{
+					"c": [
+						1471,
+						2934,
+						732,
+						2188
+					]
+				},
+				{
+					"c": [
+						732,
+						2188,
+						718,
+						2166
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						718,
+						2166,
+						615,
+						2159
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						615,
+						2159,
+						608,
+						1954
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						608,
+						1954,
+						674,
+						1954
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						674,
+						1954,
+						820,
+						1954
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						820,
+						1954,
+						828,
+						2020
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						820,
+						2093,
+						820,
+						2159
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						820,
+						2159,
+						755,
+						2166
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						755,
+						2166,
+						732,
+						2188
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1493,
+						2839,
+						1559,
+						2831
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1486,
+						2927,
+						1493,
+						2839
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1624,
+						2831,
+						1697,
+						2831
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1697,
+						2831,
+						1697,
+						2941
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						1697,
+						2941,
+						1727,
+						2963
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3496,
+						2956,
+						3525,
+						2941
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3525,
+						2941,
+						3532,
+						2846
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3532,
+						2846,
+						3598,
+						2839
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3671,
+						2839,
+						3737,
+						2839
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3737,
+						2839,
+						3737,
+						2912
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						3401,
+						3014,
+						3481,
+						3029
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3430,
+						3000,
+						3452,
+						3051
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3415,
+						3044,
+						3466,
+						3007
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3846,
+						3044,
+						3920,
+						2941
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3978,
+						3058,
+						4051,
+						2963
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3956,
+						2897,
+						4030,
+						2795
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4080,
+						2927,
+						4146,
+						2824
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4051,
+						2766,
+						4124,
+						2664
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4146,
+						2627,
+						4227,
+						2524
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4183,
+						2781,
+						4263,
+						2678
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4293,
+						2641,
+						4366,
+						2547
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4278,
+						2481,
+						4351,
+						2386
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4395,
+						2510,
+						4468,
+						2415
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4366,
+						2349,
+						4439,
+						2247
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4504,
+						2364,
+						4577,
+						2269
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4468,
+						2217,
+						4541,
+						2115
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4607,
+						2232,
+						4680,
+						2130
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4870,
+						2013,
+						4870,
+						1896
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4761,
+						1903,
+						4761,
+						1779
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4877,
+						1837,
+						4884,
+						1713
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4761,
+						1720,
+						4761,
+						1589
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4877,
+						1669,
+						4877,
+						1545
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4761,
+						1552,
+						4761,
+						1428
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4884,
+						1486,
+						4884,
+						1369
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4768,
+						1384,
+						4768,
+						1260
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4892,
+						1319,
+						4892,
+						1194
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4724,
+						1165,
+						4651,
+						1070
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4570,
+						1143,
+						4497,
+						1048
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4614,
+						1019,
+						4541,
+						924
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4512,
+						887,
+						4439,
+						792
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4454,
+						997,
+						4380,
+						902
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4351,
+						872,
+						4270,
+						770
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4402,
+						748,
+						4329,
+						646
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4249,
+						741,
+						4168,
+						646
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4300,
+						609,
+						4220,
+						507
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4197,
+						471,
+						4124,
+						375
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4139,
+						580,
+						4066,
+						485
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4088,
+						331,
+						4015,
+						237
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						4037,
+						456,
+						3956,
+						361
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3934,
+						324,
+						3854,
+						229
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2940,
+						76,
+						2823,
+						76
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2984,
+						76,
+						3108,
+						76
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3159,
+						76,
+						3284,
+						76
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3393,
+						185,
+						3276,
+						185
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3225,
+						185,
+						3101,
+						193
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3065,
+						185,
+						2933,
+						185
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2875,
+						185,
+						2758,
+						185
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2626,
+						200,
+						2501,
+						200
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2451,
+						193,
+						2334,
+						193
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2268,
+						193,
+						2151,
+						193
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2107,
+						193,
+						1983,
+						193
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1924,
+						193,
+						1800,
+						193
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						1931,
+						171,
+						1961,
+						127
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1931,
+						134,
+						1983,
+						141
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2626,
+						251,
+						2706,
+						258
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2655,
+						281,
+						2735,
+						185
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2684,
+						200,
+						2735,
+						229
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3445,
+						171,
+						3525,
+						112
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3459,
+						120,
+						3525,
+						149
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3781,
+						310,
+						3839,
+						331
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3803,
+						339,
+						3825,
+						302
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4007,
+						565,
+						4059,
+						617
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4022,
+						609,
+						4037,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3956,
+						960,
+						4030,
+						916
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3978,
+						924,
+						4015,
+						960
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4278,
+						880,
+						4278,
+						938
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4256,
+						909,
+						4307,
+						902
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4497,
+						1245,
+						4585,
+						1245
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4563,
+						1202,
+						4534,
+						1275
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4263,
+						1282,
+						4366,
+						1282
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4314,
+						1252,
+						4314,
+						1326
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4709,
+						2320,
+						4761,
+						2393
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4717,
+						2378,
+						4761,
+						2342
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4548,
+						1991,
+						4577,
+						2064
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						4541,
+						2027,
+						4577,
+						2027
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3883,
+						2481,
+						4000,
+						2473
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3949,
+						2444,
+						3920,
+						2517
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1968,
+						2269,
+						2319,
+						2269
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2319,
+						2269,
+						2319,
+						2737
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2319,
+						2737,
+						1968,
+						2737
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1968,
+						2737,
+						1968,
+						2269
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2553,
+						2269,
+						2611,
+						2269
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2611,
+						2269,
+						2611,
+						2393
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2611,
+						2393,
+						2553,
+						2393
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2553,
+						2393,
+						2553,
+						2269
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2729,
+						2274,
+						2729,
+						2398
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2670,
+						2274,
+						2729,
+						2274
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2729,
+						2398,
+						2670,
+						2398
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2670,
+						2398,
+						2670,
+						2274
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2844,
+						2272,
+						2844,
+						2396
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2786,
+						2272,
+						2844,
+						2272
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2844,
+						2396,
+						2786,
+						2396
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2786,
+						2396,
+						2786,
+						2272
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2963,
+						2271,
+						2963,
+						2395
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2904,
+						2271,
+						2963,
+						2271
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2963,
+						2395,
+						2904,
+						2395
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2904,
+						2395,
+						2904,
+						2271
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3079,
+						2271,
+						3079,
+						2395
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3020,
+						2271,
+						3079,
+						2271
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3079,
+						2395,
+						3020,
+						2395
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3020,
+						2395,
+						3020,
+						2271
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3197,
+						2269,
+						3197,
+						2393
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3138,
+						2269,
+						3197,
+						2269
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3197,
+						2393,
+						3138,
+						2393
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3138,
+						2393,
+						3138,
+						2269
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3314,
+						2269,
+						3314,
+						2393
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3255,
+						2269,
+						3314,
+						2269
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3314,
+						2393,
+						3255,
+						2393
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3255,
+						2393,
+						3255,
+						2269
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3431,
+						2271,
+						3431,
+						2395
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3372,
+						2271,
+						3431,
+						2271
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3431,
+						2395,
+						3372,
+						2395
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3372,
+						2395,
+						3372,
+						2271
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3546,
+						2272,
+						3546,
+						2396
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3488,
+						2272,
+						3546,
+						2272
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3546,
+						2396,
+						3488,
+						2396
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3488,
+						2396,
+						3488,
+						2272
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3664,
+						2267,
+						3664,
+						2391
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3606,
+						2267,
+						3664,
+						2267
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3664,
+						2391,
+						3606,
+						2391
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3606,
+						2391,
+						3606,
+						2267
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3664,
+						2446,
+						3664,
+						2570
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3606,
+						2446,
+						3664,
+						2446
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3664,
+						2570,
+						3606,
+						2570
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3606,
+						2570,
+						3606,
+						2446
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3545,
+						2446,
+						3545,
+						2570
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3487,
+						2446,
+						3545,
+						2446
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3545,
+						2570,
+						3487,
+						2570
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3487,
+						2570,
+						3487,
+						2446
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3430,
+						2448,
+						3430,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3371,
+						2448,
+						3430,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3430,
+						2572,
+						3371,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3371,
+						2572,
+						3371,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3316,
+						2451,
+						3316,
+						2575
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3258,
+						2451,
+						3316,
+						2451
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3316,
+						2575,
+						3258,
+						2575
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3258,
+						2575,
+						3258,
+						2451
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3199,
+						2447,
+						3199,
+						2571
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3141,
+						2447,
+						3199,
+						2447
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3199,
+						2571,
+						3141,
+						2571
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3141,
+						2571,
+						3141,
+						2447
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3078,
+						2448,
+						3078,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3020,
+						2448,
+						3078,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3078,
+						2572,
+						3020,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3020,
+						2572,
+						3020,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2613,
+						2446,
+						2613,
+						2570
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2554,
+						2446,
+						2613,
+						2446
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2613,
+						2570,
+						2554,
+						2570
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2554,
+						2570,
+						2554,
+						2446
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2727,
+						2448,
+						2727,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2668,
+						2448,
+						2727,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2727,
+						2572,
+						2668,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2668,
+						2572,
+						2668,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2848,
+						2450,
+						2848,
+						2574
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2790,
+						2450,
+						2848,
+						2450
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2848,
+						2574,
+						2790,
+						2574
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2790,
+						2574,
+						2790,
+						2450
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2962,
+						2448,
+						2962,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2904,
+						2448,
+						2962,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2962,
+						2572,
+						2904,
+						2572
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2904,
+						2572,
+						2904,
+						2448
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2612,
+						2621,
+						2612,
+						2745
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2554,
+						2621,
+						2612,
+						2621
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2612,
+						2745,
+						2554,
+						2745
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2554,
+						2745,
+						2554,
+						2621
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2731,
+						2622,
+						2731,
+						2746
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2672,
+						2622,
+						2731,
+						2622
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2731,
+						2746,
+						2672,
+						2746
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2672,
+						2746,
+						2672,
+						2622
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2847,
+						2623,
+						2847,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2789,
+						2623,
+						2847,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2847,
+						2747,
+						2789,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2789,
+						2747,
+						2789,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2963,
+						2623,
+						2963,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2905,
+						2623,
+						2963,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2963,
+						2747,
+						2905,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2905,
+						2747,
+						2905,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3082,
+						2625,
+						3082,
+						2749
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3023,
+						2625,
+						3082,
+						2625
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3082,
+						2749,
+						3023,
+						2749
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3023,
+						2749,
+						3023,
+						2625
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3199,
+						2623,
+						3199,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3141,
+						2623,
+						3199,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3199,
+						2747,
+						3141,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3141,
+						2747,
+						3141,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3318,
+						2622,
+						3318,
+						2746
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3259,
+						2622,
+						3318,
+						2622
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3318,
+						2746,
+						3259,
+						2746
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3259,
+						2746,
+						3259,
+						2622
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3431,
+						2619,
+						3431,
+						2742
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3372,
+						2619,
+						3431,
+						2619
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3431,
+						2742,
+						3372,
+						2742
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3372,
+						2742,
+						3372,
+						2619
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3548,
+						2622,
+						3548,
+						2746
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3489,
+						2622,
+						3548,
+						2622
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3548,
+						2746,
+						3489,
+						2746
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3489,
+						2746,
+						3489,
+						2622
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3661,
+						2623,
+						3661,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3603,
+						2623,
+						3661,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3661,
+						2747,
+						3603,
+						2747
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						3603,
+						2747,
+						3603,
+						2623
+					],
+					"light": 0,
+					"sight": 0,
+					"sound": 0
+				},
+				{
+					"c": [
+						2852,
+						580,
+						3028,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3028,
+						580,
+						3021,
+						755
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3021,
+						755,
+						2852,
+						755
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2852,
+						755,
+						2852,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2852,
+						580,
+						2940,
+						624
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2940,
+						624,
+						2940,
+						682
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2940,
+						682,
+						2852,
+						755
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2940,
+						624,
+						3028,
+						580
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2940,
+						682,
+						3021,
+						755
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2136,
+						814,
+						2509,
+						521
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2509,
+						521,
+						2692,
+						755
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2692,
+						755,
+						2626,
+						799
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2626,
+						799,
+						2575,
+						741
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2575,
+						741,
+						2334,
+						924
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2334,
+						924,
+						2384,
+						989
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2384,
+						989,
+						2319,
+						1041
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2319,
+						1041,
+						2144,
+						814
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2144,
+						814,
+						2311,
+						858
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2311,
+						858,
+						2319,
+						1041
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2311,
+						858,
+						2516,
+						697
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2516,
+						697,
+						2692,
+						755
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2516,
+						697,
+						2509,
+						521
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1939,
+						1106,
+						2056,
+						1070
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1968,
+						1055,
+						2019,
+						1114
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1968,
+						2737,
+						2151,
+						2656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2151,
+						2656,
+						2319,
+						2737
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1968,
+						2269,
+						2136,
+						2349
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2136,
+						2349,
+						2319,
+						2269
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2136,
+						2349,
+						2151,
+						2656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1383,
+						2093,
+						2326,
+						2093
+					]
+				},
+				{
+					"c": [
+						2326,
+						2093,
+						2326,
+						1691
+					]
+				},
+				{
+					"c": [
+						2326,
+						1691,
+						2326,
+						1626
+					],
+					"door": 1,
+					"ds": 2,
+					"doorSound": "woodBasic"
+				},
+				{
+					"c": [
+						2326,
+						1626,
+						2326,
+						1567
+					],
+					"door": 1,
+					"ds": 2,
+					"doorSound": "woodBasic"
+				},
+				{
+					"c": [
+						2326,
+						1567,
+						2326,
+						1158
+					]
+				},
+				{
+					"c": [
+						2326,
+						1158,
+						1383,
+						1158
+					]
+				},
+				{
+					"c": [
+						1383,
+						1158,
+						1383,
+						1326
+					]
+				},
+				{
+					"c": [
+						1383,
+						1326,
+						1091,
+						1326
+					]
+				},
+				{
+					"c": [
+						1091,
+						1326,
+						1091,
+						1626
+					]
+				},
+				{
+					"c": [
+						1091,
+						1626,
+						1383,
+						1626
+					]
+				},
+				{
+					"c": [
+						1383,
+						1626,
+						1383,
+						1509
+					]
+				},
+				{
+					"c": [
+						1383,
+						1509,
+						1383,
+						1450
+					],
+					"door": 1,
+					"doorSound": "woodBasic"
+				},
+				{
+					"c": [
+						1383,
+						1450,
+						1383,
+						1326
+					]
+				},
+				{
+					"c": [
+						1383,
+						1626,
+						1383,
+						2093
+					]
+				},
+				{
+					"c": [
+						1303,
+						2071,
+						1354,
+						2035
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1317,
+						2035,
+						1339,
+						2071
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						937,
+						2166,
+						1018,
+						2240
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						923,
+						2240,
+						1003,
+						2166
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1383,
+						2276,
+						1442,
+						2276
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1442,
+						2276,
+						1442,
+						2327
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1442,
+						2327,
+						1383,
+						2327
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1383,
+						2327,
+						1383,
+						2276
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1390,
+						2386,
+						1449,
+						2386
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1449,
+						2386,
+						1449,
+						2444
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1449,
+						2444,
+						1390,
+						2444
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1390,
+						2444,
+						1390,
+						2386
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1383,
+						2503,
+						1442,
+						2503
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1442,
+						2503,
+						1442,
+						2561
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1442,
+						2561,
+						1383,
+						2561
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1383,
+						2561,
+						1383,
+						2503
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1471,
+						2707,
+						1478,
+						2678
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1478,
+						2678,
+						1507,
+						2656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1507,
+						2656,
+						1544,
+						2656
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1544,
+						2656,
+						1603,
+						2678
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1603,
+						2678,
+						1603,
+						2707
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1603,
+						2707,
+						1559,
+						2714
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1559,
+						2714,
+						1522,
+						2737
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1522,
+						2737,
+						1507,
+						2737
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1507,
+						2737,
+						1500,
+						2729
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1500,
+						2729,
+						1471,
+						2707
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1639,
+						2693,
+						1683,
+						2714
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1646,
+						2722,
+						1661,
+						2685
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1887,
+						2817,
+						1902,
+						2773
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1902,
+						2773,
+						1939,
+						2751
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1939,
+						2751,
+						1961,
+						2766
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1961,
+						2766,
+						1983,
+						2795
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1983,
+						2795,
+						1924,
+						2839
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1924,
+						2839,
+						1910,
+						2817
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						1910,
+						2817,
+						1887,
+						2817
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2553,
+						2839,
+						2597,
+						2875
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2568,
+						2890,
+						2597,
+						2839
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2801,
+						1976,
+						2797,
+						1966
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2797,
+						1966,
+						2787,
+						1962
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2787,
+						1962,
+						2776,
+						1966
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2776,
+						1966,
+						2772,
+						1976
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2772,
+						1976,
+						2776,
+						1987
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2776,
+						1987,
+						2787,
+						1991
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2787,
+						1991,
+						2797,
+						1987
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2797,
+						1987,
+						2801,
+						1976
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3978,
+						1976,
+						3972,
+						1961
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3972,
+						1961,
+						3956,
+						1954
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3956,
+						1954,
+						3941,
+						1961
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3941,
+						1961,
+						3934,
+						1976
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3934,
+						1976,
+						3941,
+						1992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3941,
+						1992,
+						3956,
+						1998
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3956,
+						1998,
+						3972,
+						1992
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3972,
+						1992,
+						3978,
+						1976
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3979,
+						1274,
+						3974,
+						1261
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3974,
+						1261,
+						3961,
+						1256
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3961,
+						1256,
+						3948,
+						1261
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3948,
+						1261,
+						3942,
+						1274
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3942,
+						1274,
+						3948,
+						1287
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3948,
+						1287,
+						3961,
+						1292
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3961,
+						1292,
+						3974,
+						1287
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						3974,
+						1287,
+						3979,
+						1274
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2808,
+						1275,
+						2803,
+						1261
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2803,
+						1261,
+						2790,
+						1256
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2790,
+						1256,
+						2777,
+						1261
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2777,
+						1261,
+						2772,
+						1275
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2772,
+						1275,
+						2777,
+						1288
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2777,
+						1288,
+						2790,
+						1293
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2790,
+						1293,
+						2803,
+						1288
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						2803,
+						1288,
+						2808,
+						1275
+					],
+					"light": 10,
+					"sight": 10,
+					"sound": 10
+				},
+				{
+					"c": [
+						674,
+						1954,
+						696,
+						1925
+					]
+				},
+				{
+					"c": [
+						696,
+						1925,
+						689,
+						1326
+					]
+				},
+				{
+					"c": [
+						689,
+						1326,
+						682,
+						1296
+					]
+				},
+				{
+					"c": [
+						682,
+						1296,
+						615,
+						1296
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						615,
+						1296,
+						615,
+						1092
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						615,
+						1092,
+						718,
+						1085
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						718,
+						1085,
+						820,
+						1085
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						820,
+						1085,
+						820,
+						1150
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						828,
+						1223,
+						828,
+						1296
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						828,
+						1296,
+						682,
+						1296
+					],
+					"dir": 1
+				},
+				{
+					"c": [
+						4519,
+						1530,
+						4519,
+						1626
+					],
+					"door": 1,
+					"doorSound": "woodBasic"
+				},
+				{
+					"c": [
+						4519,
+						1626,
+						4519,
+						1720
+					],
+					"door": 1,
+					"doorSound": "woodBasic"
+				},
+				{
+					"c": [
+						5126,
+						3088,
+						24,
+						3088
+					]
+				},
+				{
+					"c": [
+						24,
+						3088,
+						24,
+						-27
+					]
+				},
+				{
+					"c": [
+						24,
+						-27,
+						5126,
+						-12
+					]
+				},
+				{
+					"c": [
+						5126,
+						-12,
+						5126,
+						3088
+					]
+				}
+			]
+		}
+	]
+}

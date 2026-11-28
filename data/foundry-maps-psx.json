@@ -1,0 +1,22 @@
+{
+	"map": [
+		{
+			"name": "Ixalan",
+			"source": "PSX",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Plane Shift: Ixalan",
+							"Land of the Great River"
+						],
+						"sort": [
+							3,
+							0
+						]
+					}
+				}
+			}
+		}
+	]
+}

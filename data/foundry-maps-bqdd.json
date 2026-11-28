@@ -1,0 +1,40 @@
+{
+	"map": [
+		{
+			"name": "Map: Kobold Cave",
+			"source": "BQDD",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Borderlands Quest: Dagger Danger!",
+							"Borderlands Quest: Dagger Danger!"
+						],
+						"sort": [
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Player Version",
+			"source": "BQDD",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Borderlands Quest: Dagger Danger!",
+							"Borderlands Quest: Dagger Danger!"
+						],
+						"sort": [
+							0,
+							1
+						]
+					}
+				}
+			}
+		}
+	]
+}

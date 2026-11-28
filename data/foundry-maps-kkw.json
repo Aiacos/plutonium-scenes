@@ -1,0 +1,22 @@
+{
+	"map": [
+		{
+			"name": "Map 4.11: Krenko's Hideout",
+			"source": "KKW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Krenko's Way",
+							"Krenko's Way"
+						],
+						"sort": [
+							0,
+							0
+						]
+					}
+				}
+			}
+		}
+	]
+}

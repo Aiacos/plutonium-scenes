@@ -1,0 +1,22 @@
+{
+	"map": [
+		{
+			"name": "Map of Ixalan",
+			"source": "XMtS",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"X Marks the Spot",
+							"Appendix C: Map of Ixalan"
+						],
+						"sort": [
+							7,
+							0
+						]
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,112 @@
+{
+	"map": [
+		{
+			"name": "Daoine Gloine",
+			"source": "LLK",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Lost Laboratory of Kwalish",
+							"Part 3: The Ooze-Flooded City"
+						],
+						"sort": [
+							3,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Daoine Gloine (Player Version)",
+			"source": "LLK",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Lost Laboratory of Kwalish",
+							"Part 3: The Ooze-Flooded City"
+						],
+						"sort": [
+							3,
+							1.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Daoine Gloine Poster",
+			"source": "LLK",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Lost Laboratory of Kwalish",
+							"Daoine Gloine Map"
+						],
+						"sort": [
+							10,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Daoine Gloine Poster (Player Version)",
+			"source": "LLK",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Lost Laboratory of Kwalish",
+							"Daoine Gloine Map"
+						],
+						"sort": [
+							10,
+							2.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Monastery of the Distressed Body",
+			"source": "LLK",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Lost Laboratory of Kwalish",
+							"Part 2: Monastery of the Distressed Body"
+						],
+						"sort": [
+							2,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Monastery of the Distressed Body (Player Version)",
+			"source": "LLK",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Lost Laboratory of Kwalish",
+							"Part 2: Monastery of the Distressed Body"
+						],
+						"sort": [
+							2,
+							0.5
+						]
+					}
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,526 @@
+{
+	"map": [
+		{
+			"name": "Atlas of Faerûn",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Atlas of Faerûn"
+						],
+						"sort": [
+							7,
+							14
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Aglarond and Thay",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Aglarond and Thay (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							2.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Anauroch",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Anauroch (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							1.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Forgotten Lands",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							4
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Forgotten Lands (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							4.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Forgotten Realms",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Forgotten Realms (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							0.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Heartlands",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Heartlands (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							5.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Lands of Intrigue",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							6
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Lands of Intrigue (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							6.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Lantan",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							10
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Lantan (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							10.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Moonshae Isles",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							11
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Moonshae Isles (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							11.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Nelanther",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							12
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Nelanther (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							12.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Old Empires",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							8
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Old Empires (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							8.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Rashemen",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							3
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Rashemen (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							3.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Sword Coast",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							9
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Sword Coast (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							9.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: The North",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							7
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: The North (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							7.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Vilhon Reach",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							13
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Vilhon Reach (Player Version)",
+			"source": "FRHoF",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"Forgotten Realms: Heroes of Faerûn",
+							"Chapter 2: A Guide to the Realms"
+						],
+						"sort": [
+							2,
+							13.5
+						]
+					}
+				}
+			}
+		}
+	]
+}

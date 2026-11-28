@@ -1,0 +1,292 @@
+{
+	"map": [
+		{
+			"name": "Map: Azjol-Nerub",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							1
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Azjol-Nerub (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							1.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Blackfathom Deeps",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							2
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Blackfathom Deeps (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							2.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Deadmines",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							3
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Deadmines (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							3.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Dire Maul",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							4
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Dire Maul (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							4.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Onyxia's Lair",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Onyxia's Lair (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							5.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Scarlet Monastery",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							6
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Scarlet Monastery (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							6.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Shadowfang Keep",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							7
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "Map: Shadowfang Keep (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 6: Adventures in Azeroth"
+						],
+						"sort": [
+							6,
+							7.5
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "World Map of Azeroth",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 5: The World of Warcraft"
+						],
+						"sort": [
+							5,
+							0
+						]
+					}
+				}
+			}
+		},
+		{
+			"name": "World Map of Azeroth (Player Version)",
+			"source": "WoW",
+			"flags": {
+				"ddb-plutonium-scenes": {
+					"folder": {
+						"path": [
+							"World of Warcraft",
+							"Chapter 5: The World of Warcraft"
+						],
+						"sort": [
+							5,
+							0.5
+						]
+					}
+				}
+			}
+		}
+	]
+}
